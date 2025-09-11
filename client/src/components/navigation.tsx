@@ -87,7 +87,7 @@ export default function Navigation() {
             {/* CTA Button */}
             <div className="ml-6 pl-6 border-l border-slate-200">
               <button 
-                className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
+                className="px-6 py-2.5 bg-[#164070] text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
                 onClick={() => scrollToSection('contact')}
                 data-testid="nav-cta"
               >
@@ -127,7 +127,7 @@ export default function Navigation() {
               ))}
               <div className="pt-4 border-t border-slate-200">
                 <button 
-                  className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+                  className="w-full px-4 py-3 bg-[#164070] text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
                   onClick={() => scrollToSection('contact')}
                   data-testid="mobile-nav-cta"
                 >

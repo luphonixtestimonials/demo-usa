@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* Enhanced Contact CTA Section */}
-      <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-[#dfeef1] relative overflow-hidden">
+      <section id="contact" className="py-24 bg-gradient-to-br from-[#dfeef1] to-[#dfeef1] relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
         

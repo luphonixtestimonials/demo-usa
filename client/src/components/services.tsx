@@ -169,7 +169,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-slate-50 to-[#dfeef1]">
+    <section id="services" className="py-24 bg-gradient-to-br from-[#dfeef1] to-[#dfeef1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Section Header */}
         <div className="text-center mb-20 fade-in">

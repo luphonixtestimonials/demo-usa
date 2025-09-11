@@ -64,7 +64,7 @@ export default function Hero() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-slate-900 leading-[1.1] tracking-tight" data-testid="hero-title">
               Transform Your
-              <span className="block text-[#164070] animate-pulse"> Digital Future</span>
+              <span className="block text-[#164070]"> Digital Future</span>
             </h1>
 
             <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed max-w-2xl font-inter" data-testid="hero-description">

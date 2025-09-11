@@ -47,15 +47,6 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden" ref={heroRef}>
       {/* Sophisticated Background */}
       <div className="absolute inset-0 bg-[#dfeef1]">
-        {/* Animated mesh gradient overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.3)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.3)_0%,transparent_50%),radial-gradient(circle_at_40%_40%,rgba(139,92,246,0.3)_0%,transparent_50%)] animate-pulse"></div>
-
-        {/* Floating particles */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-ping opacity-75"></div>
-          <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-teal-400 rounded-full animate-ping opacity-50 animation-delay-1000"></div>
-          <div className="absolute bottom-1/3 left-2/3 w-1.5 h-1.5 bg-purple-400 rounded-full animate-ping opacity-60 animation-delay-2000"></div>
-        </div>
 
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(223,238,241,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(223,238,241,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>

@@ -123,8 +123,8 @@ export default function Home() {
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-2xl font-bold text-[#dfeef1]">98%</span>
                 </div>
-                <h3 className="text-2xl font-bold font-poppins text-white mb-2">Satisfaction</h3>
-                <p className="text-white/70 font-inter">client satisfaction with 5-star service ratings</p>
+                <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Satisfaction</h3>
+                <p className="text-[#dfeef1]/70 font-inter">client satisfaction with 5-star service ratings</p>
                 <div className="flex justify-center mt-4 space-x-1">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -139,23 +139,23 @@ export default function Home() {
           {/* Additional Trust Indicators */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 fade-in">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">ISO 27001</div>
-              <p className="text-white/70">Certified Security Standards</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">ISO 27001</div>
+              <p className="text-[#dfeef1]/70">Certified Security Standards</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">Fortune 100</div>
-              <p className="text-white/70">Enterprise Client Base</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">Fortune 100</div>
+              <p className="text-[#dfeef1]/70">Enterprise Client Base</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">99.9%</div>
-              <p className="text-white/70">System Uptime Guarantee</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">99.9%</div>
+              <p className="text-[#dfeef1]/70">System Uptime Guarantee</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Enhanced Contact CTA Section */}
-      <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+      <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-[#dfeef1] relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
         
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
             
             <div className="relative z-10 text-center fade-in">
-              <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30 text-white/90 text-sm font-medium mb-8">
+              <div className="inline-flex items-center px-4 py-2 bg-[#dfeef1]/20 backdrop-blur-md rounded-full border border-[#dfeef1]/30 text-[#dfeef1]/90 text-sm font-medium mb-8">
                 <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2 animate-pulse"></span>
                 Ready to Get Started?
               </div>
@@ -182,7 +182,7 @@ export default function Home() {
               {/* Enhanced CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <button 
-                  className="group px-8 py-4 bg-white text-blue-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 min-w-[200px]" 
+                  className="group px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-[#dfeef1]/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 min-w-[200px]" 
                   onClick={handleContactUs}
                   data-testid="button-contact-us"
                 >
@@ -195,7 +195,7 @@ export default function Home() {
                 </button>
                 
                 <button 
-                  className="group px-8 py-4 border-2 border-white/30 text-white rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300 hover:scale-105 min-w-[200px]"
+                  className="group px-8 py-4 border-2 border-[#dfeef1]/30 text-[#dfeef1] rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-[#dfeef1]/10 hover:border-[#dfeef1]/50 transition-all duration-300 hover:scale-105 min-w-[200px]"
                   onClick={handleScheduleConsultation}
                   data-testid="button-schedule-consultation"
                 >
@@ -238,8 +238,8 @@ export default function Home() {
             </div>
             
             {/* Floating Elements */}
-            <div className="absolute top-6 right-6 w-24 h-24 bg-white/10 rounded-full animate-pulse"></div>
-            <div className="absolute bottom-6 left-6 w-16 h-16 bg-white/10 rounded-full animate-ping"></div>
+            <div className="absolute top-6 right-6 w-24 h-24 bg-[#dfeef1]/10 rounded-full animate-pulse"></div>
+            <div className="absolute bottom-6 left-6 w-16 h-16 bg-[#dfeef1]/10 rounded-full animate-ping"></div>
           </div>
         </div>
       </section>

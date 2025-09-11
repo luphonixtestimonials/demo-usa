@@ -113,7 +113,7 @@ export default function Navigation() {
         
         {/* Enhanced Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
+          <div className="md:hidden bg-[#dfeef1]/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
             <div className="px-4 py-6 space-y-2">
               {['home', 'services', 'about', 'contact'].map((section) => (
                 <button 

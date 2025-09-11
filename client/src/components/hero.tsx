@@ -73,31 +73,31 @@ export default function Hero() {
 
             {/* Enhanced Trust Indicators */}
             <div className="flex flex-wrap items-center gap-8 justify-center lg:justify-start">
-              <div className="flex items-center space-x-3 text-[#dfeef1]/70">
+              <div className="flex items-center space-x-3 text-slate-700">
                 <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">ISO 27001</div>
-                  <div className="text-xs">Certified Security</div>
+                  <div className="text-sm font-semibold text-slate-900">ISO 27001</div>
+                  <div className="text-xs text-slate-600">Certified Security</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 text-[#dfeef1]/70">
+              <div className="flex items-center space-x-3 text-slate-700">
                 <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">Fortune 100</div>
-                  <div className="text-xs">Trusted Partner</div>
+                  <div className="text-sm font-semibold text-slate-900">Fortune 100</div>
+                  <div className="text-xs text-slate-600">Trusted Partner</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 text-[#dfeef1]/70">
+              <div className="flex items-center space-x-3 text-slate-700">
                 <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">24/7</div>
-                  <div className="text-xs">Global Support</div>
+                  <div className="text-sm font-semibold text-slate-900">24/7</div>
+                  <div className="text-xs text-slate-600">Global Support</div>
                 </div>
               </div>
             </div>

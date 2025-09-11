@@ -37,11 +37,11 @@ export default function Navigation() {
           {/* Enhanced Logo */}
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="w-10 h-10 bg-[#164070] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <div className="w-5 h-5 bg-[#dfeef1] rounded-sm"></div>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
+                <span className="text-2xl font-bold font-poppins text-[#164070]" data-testid="logo">
                   TechForward
                 </span>
                 <span className="text-xs text-slate-500 font-medium tracking-wider">SOLUTIONS</span>

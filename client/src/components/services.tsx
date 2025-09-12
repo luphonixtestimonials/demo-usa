@@ -208,13 +208,10 @@ export default function Services() {
                   {/* Card content */}
                   <div className="relative z-10">
                     {/* Icon with professional styling */}
-                    <CardItem translateZ="50" className="flex items-center justify-between mb-6">
+                    <CardItem translateZ="50" className="mb-6">
                       <CardItem translateZ="60" className="flex items-center justify-center w-14 h-14 bg-[hsl(220,91%,15%)] rounded-xl shadow-lg transition-all duration-300">
                         <IconComponent className="w-7 h-7 text-[#dfeef1]" />
                       </CardItem>
-                      <div className="text-right">
-                        <div className="text-xs text-slate-400 font-mono">0{service.id}</div>
-                      </div>
                     </CardItem>
                     
                     <CardItem

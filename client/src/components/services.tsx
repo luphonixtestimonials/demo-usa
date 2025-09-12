@@ -198,9 +198,9 @@ export default function Services() {
               <CardContainer
                 key={service.id}
                 className="inter-var"
-                containerClassName="py-4"
+                containerClassName="py-2"
               >
-                <CardBody className="relative group/card bg-[#dfeef1] rounded-2xl border border-slate-200 hover:border-blue-300 p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 w-auto sm:w-[30rem] h-auto">
+                <CardBody className="relative group/card bg-[#dfeef1] rounded-2xl border border-slate-200 hover:border-blue-300 p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 w-auto sm:w-[26rem] h-auto">
                   {/* Gradient border effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute inset-0.5 bg-[#dfeef1] rounded-2xl"></div>

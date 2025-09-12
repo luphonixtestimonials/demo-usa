@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -73,7 +74,7 @@ export default function Hero() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-[#dfeef1] leading-[1.1] tracking-tight" data-testid="hero-title">
               Transform Your
-              <span className="block text-[#4680c6] animate-pulse"> Digital Future</span>
+              <ContainerTextFlip text="Digital Future" className="block text-[#4680c6] animate-pulse"/>
             </h1>
 
             <p className="text-xl lg:text-2xl text-[#dfeef1]/80 leading-relaxed max-w-2xl font-inter" data-testid="hero-description">

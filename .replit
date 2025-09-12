@@ -52,11 +52,7 @@ author = 47437621
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "sudo apt update && sudo apt install zip -y"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "zip -r my_project.zip ."
+args = "zip -r ../archive_name.zip ."
 
 [deployment]
 deploymentTarget = "autoscale"

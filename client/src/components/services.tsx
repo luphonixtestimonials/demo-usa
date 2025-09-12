@@ -200,10 +200,10 @@ export default function Services() {
                 className="inter-var"
                 containerClassName="py-2"
               >
-                <CardBody className="relative group/card bg-slate-700 rounded-2xl border border-slate-600 hover:border-blue-400 p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 w-auto sm:w-[26rem] h-auto hover:bg-[#164070]">
+                <CardBody className="relative group/card bg-[#d7e4ea] rounded-2xl border border-[#c2d3da] hover:border-blue-400 p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 w-auto sm:w-[26rem] h-auto hover:bg-[#164070]">
                   {/* Gradient border effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute inset-0.5 bg-slate-700 group-hover/card:bg-[#164070] rounded-2xl transition-colors duration-500"></div>
+                  <div className="absolute inset-0.5 bg-[#d7e4ea] group-hover/card:bg-[#164070] rounded-2xl transition-colors duration-500"></div>
                   
                   {/* Card content */}
                   <div className="relative z-10">
@@ -216,7 +216,7 @@ export default function Services() {
                     
                     <CardItem
                       translateZ="50"
-                      className="text-xl font-bold font-poppins text-white mb-3 group-hover/card:text-blue-300 transition-colors duration-300"
+                      className="text-xl font-bold font-poppins text-slate-800 mb-3 group-hover/card:text-blue-300 transition-colors duration-300"
                       data-testid={`service-title-${service.id}`}
                     >
                       {service.title}
@@ -225,7 +225,7 @@ export default function Services() {
                     <CardItem
                       as="p"
                       translateZ="60"
-                      className="text-slate-300 font-inter mb-6 leading-relaxed text-sm group-hover/card:text-slate-100"
+                      className="text-slate-600 font-inter mb-6 leading-relaxed text-sm group-hover/card:text-slate-100"
                       data-testid={`service-description-${service.id}`}
                     >
                       {service.description}
@@ -241,7 +241,7 @@ export default function Services() {
                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                               </svg>
                             </div>
-                            <span className="text-slate-300 font-inter text-sm group-hover/card:text-slate-100 transition-colors duration-300">{feature}</span>
+                            <span className="text-slate-600 font-inter text-sm group-hover/card:text-slate-100 transition-colors duration-300">{feature}</span>
                           </li>
                         ))}
                       </ul>

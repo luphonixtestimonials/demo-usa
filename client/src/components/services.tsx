@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { 
   Lightbulb, 
@@ -13,6 +14,7 @@ import {
   Settings, 
   UserCheck 
 } from "lucide-react";
+import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 
 const services = [
   {
@@ -188,66 +190,78 @@ export default function Services() {
           </p>
         </div>
         
-        {/* Professional Services Grid */}
+        {/* Professional Services Grid with 3D Cards */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div 
-                key={service.id} 
-                className="group relative bg-[#dfeef1] rounded-2xl border border-slate-200 hover:border-blue-300 p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-                data-testid={`service-card-${service.id}`}
+              <CardContainer
+                key={service.id}
+                className="inter-var"
+                containerClassName="py-4"
               >
-                {/* Gradient border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute inset-0.5 bg-[#dfeef1] rounded-2xl"></div>
-                
-                {/* Card content */}
-                <div className="relative z-10">
-                  {/* Icon with professional styling */}
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center justify-center w-14 h-14 bg-[hsl(220,91%,15%)] rounded-xl shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <IconComponent className="w-7 h-7 text-[#dfeef1]" />
-                    </div>
-                    <div className="text-right">
-                      <div className="text-xs text-slate-400 font-mono">0{service.id}</div>
-                    </div>
+                <CardBody className="relative group/card bg-[#dfeef1] rounded-2xl border border-slate-200 hover:border-blue-300 p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 w-auto sm:w-[30rem] h-auto">
+                  {/* Gradient border effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0.5 bg-[#dfeef1] rounded-2xl"></div>
+                  
+                  {/* Card content */}
+                  <div className="relative z-10">
+                    {/* Icon with professional styling */}
+                    <CardItem translateZ="50" className="flex items-center justify-between mb-6">
+                      <CardItem translateZ="60" className="flex items-center justify-center w-14 h-14 bg-[hsl(220,91%,15%)] rounded-xl shadow-lg transition-all duration-300">
+                        <IconComponent className="w-7 h-7 text-[#dfeef1]" />
+                      </CardItem>
+                      <div className="text-right">
+                        <div className="text-xs text-slate-400 font-mono">0{service.id}</div>
+                      </div>
+                    </CardItem>
+                    
+                    <CardItem
+                      translateZ="50"
+                      className="text-xl font-bold font-poppins text-slate-900 mb-3 group-hover/card:text-blue-600 transition-colors duration-300"
+                      data-testid={`service-title-${service.id}`}
+                    >
+                      {service.title}
+                    </CardItem>
+                    
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className="text-slate-600 font-inter mb-6 leading-relaxed text-sm"
+                      data-testid={`service-description-${service.id}`}
+                    >
+                      {service.description}
+                    </CardItem>
+                    
+                    {/* Feature list with checkmarks */}
+                    <CardItem translateZ="70" data-testid={`service-features-${service.id}`}>
+                      <ul className="space-y-3">
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start space-x-3">
+                            <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
+                              <svg className="w-3 h-3 text-[#dfeef1]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="text-slate-600 font-inter text-sm">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardItem>
+                    
+                    {/* Learn more link */}
+                    <CardItem translateZ="80" className="mt-6 pt-6 border-t border-slate-100">
+                      <button className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm group-hover/card:translate-x-1 transition-all duration-300">
+                        Learn more
+                        <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover/card:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </button>
+                    </CardItem>
                   </div>
-                  
-                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300" data-testid={`service-title-${service.id}`}>
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-slate-600 font-inter mb-6 leading-relaxed" data-testid={`service-description-${service.id}`}>
-                    {service.description}
-                  </p>
-                  
-                  {/* Feature list with checkmarks */}
-                  <ul className="space-y-3" data-testid={`service-features-${service.id}`}>
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start space-x-3">
-                        <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
-                          <svg className="w-3 h-3 text-[#dfeef1]" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                        <span className="text-slate-600 font-inter text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {/* Learn more link */}
-                  <div className="mt-6 pt-6 border-t border-slate-100">
-                    <button className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm group-hover:translate-x-1 transition-all duration-300">
-                      Learn more
-                      <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
+                </CardBody>
+              </CardContainer>
             );
           })}
         </div>

@@ -34,16 +34,17 @@ export default function Navigation() {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* 6VC Logo */}
+          {/* Enhanced Logo */}
           <div className="flex items-center group">
-            <div className="flex flex-col">
-              <span className="text-4xl font-bold font-poppins text-[#2c3e50] group-hover:scale-105 transition-transform duration-300" data-testid="logo" style={{fontFamily: 'serif'}}>
-                6vc
-              </span>
-              <div className="flex flex-col -mt-2">
-                <span className="text-lg font-bold text-[#2c3e50] tracking-wide">6VC</span>
-                <span className="text-lg font-bold text-[#2c3e50] tracking-wide">CONSULTING</span>
-                <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#2c3e50]/80'} font-medium tracking-wider`}>IT CONSULTING</span>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-5 h-5 bg-[#dfeef1] rounded-sm"></div>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
+                  6VC
+                </span>
+                <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>IT CONSULTING</span>
               </div>
             </div>
           </div>

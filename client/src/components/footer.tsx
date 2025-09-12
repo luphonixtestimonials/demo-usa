@@ -19,16 +19,15 @@ export default function Footer() {
         <div className="grid lg:grid-cols-12 md:grid-cols-6 gap-8 mb-12">
           {/* Enhanced Company Info */}
           <div className="lg:col-span-4 md:col-span-6">
-            <div className="flex flex-col mb-6">
-              <div className="mb-2">
-                <span className="text-4xl font-bold font-poppins text-[#dfeef1]" style={{fontFamily: 'serif'}}>
-                  6vc
-                </span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center">
+                <div className="w-6 h-6 bg-[#dfeef1] rounded-sm"></div>
               </div>
-              <div className="flex flex-col -mt-2">
-                <span className="text-lg font-bold text-[#dfeef1] tracking-wide">6VC</span>
-                <span className="text-lg font-bold text-[#dfeef1] tracking-wide">CONSULTING</span>
-                <span className="text-sm text-slate-400 font-medium tracking-wider" data-testid="footer-company-name">IT CONSULTING</span>
+              <div>
+                <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
+                  6VC Consulting
+                </h3>
+                <span className="text-sm text-slate-400 font-medium tracking-wider">IT CONSULTING</span>
               </div>
             </div>
             <p className="text-slate-300 font-inter mb-6 leading-relaxed max-w-md" data-testid="footer-company-description">

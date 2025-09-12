@@ -19,7 +19,7 @@ export interface ContainerTextFlipProps {
 }
 
 export function ContainerTextFlip({
-  words = ["better", "modern", "beautiful", "awesome"],
+  words = ["Vision", "Enterprise ", "Tech", "business"],
   interval = 3000,
   className,
   textClassName,

@@ -151,13 +151,13 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent">
                     <div className="absolute bottom-6 left-6 right-6">
                       <div className="bg-[#dfeef1]/90 backdrop-blur-xl rounded-2xl p-6 border border-[#dfeef1]/20">
-                        <div className="flex items-center space-x-3 mb-3">
-                          <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
-                            <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
+                        <div className="flex flex-col mb-3">
+                          <div className="mb-1">
+                            <span className="text-lg font-bold text-slate-800" style={{fontFamily: 'serif'}}>6vc</span>
                           </div>
-                          <div>
-                            <div className="text-sm font-bold text-slate-800">6VC Consulting</div>
-                            <div className="text-xs text-slate-500">IT Consulting Partner</div>
+                          <div className="flex flex-col -mt-1">
+                            <span className="text-xs font-bold text-slate-800 tracking-wide">6VC CONSULTING</span>
+                            <span className="text-xs text-slate-500">IT Consulting Partner</span>
                           </div>
                         </div>
 

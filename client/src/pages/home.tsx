@@ -176,7 +176,7 @@ export default function Home() {
               </h2>
               
               <p className="text-xl text-blue-100 mb-10 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="contact-description">
-                Join industry leaders who trust TechForward Solutions to accelerate their digital transformation journey with cutting-edge technology and exceptional support.
+                Join industry leaders who trust 6VC Consulting to accelerate their digital transformation journey with cutting-edge technology and exceptional support.
               </p>
               
               {/* Enhanced CTA Buttons */}

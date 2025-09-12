@@ -156,8 +156,8 @@ export default function Hero() {
                             <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-slate-800">TechForward Solutions</div>
-                            <div className="text-xs text-slate-500">Enterprise Technology Partner</div>
+                            <div className="text-sm font-bold text-slate-800">6VC Consulting</div>
+                            <div className="text-xs text-slate-500">IT Consulting Partner</div>
                           </div>
                         </div>
 

@@ -42,9 +42,9 @@ export default function Navigation() {
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
-                  TechForward
+                  6VC
                 </span>
-                <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>SOLUTIONS</span>
+                <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>IT CONSULTING</span>
               </div>
             </div>
           </div>

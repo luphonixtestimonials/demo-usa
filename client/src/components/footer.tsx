@@ -25,13 +25,13 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
-                  TechForward
+                  6VC Consulting
                 </h3>
-                <span className="text-sm text-slate-400 font-medium tracking-wider">SOLUTIONS</span>
+                <span className="text-sm text-slate-400 font-medium tracking-wider">IT CONSULTING</span>
               </div>
             </div>
             <p className="text-slate-300 font-inter mb-6 leading-relaxed max-w-md" data-testid="footer-company-description">
-              Leading technology services provider empowering businesses with innovative solutions, exceptional support, and cutting-edge digital transformation strategies.
+              Leading IT consulting firm empowering businesses with innovative technology solutions, exceptional support, and cutting-edge digital transformation strategies.
             </p>
             
             {/* Enhanced Social Links */}

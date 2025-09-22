@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from '/assets/logo.png';  // Updated import path for public assets
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,13 +39,13 @@ export default function Navigation() {
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <span className="text-white font-bold text-xs tracking-tight">6vc</span>
+                <img src={logo} alt="6VC Logo" className="w-10 h-10 object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-4xl font-bold font-poppins text-blue-600" data-testid="logo" style={{letterSpacing: '0.05em'}}>
+                {/* <span className="text-4xl font-bold font-poppins text-blue-600" data-testid="logo" style={{letterSpacing: '0.05em'}}>
                   6VC
-                </span>
-                <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>IT CONSULTING</span>
+                </span> */}
+                {/* <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>IT CONSULTING</span> */}
               </div>
             </div>
           </div>

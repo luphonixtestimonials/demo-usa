@@ -20,8 +20,8 @@ export default function Footer() {
           {/* Enhanced Company Info */}
           <div className="lg:col-span-4 md:col-span-6">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center">
-                <div className="w-6 h-6 bg-[#dfeef1] rounded-sm"></div>
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-xs tracking-tight">6vc</span>
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">

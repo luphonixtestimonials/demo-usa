@@ -20,18 +20,17 @@ export default function Footer() {
           {/* Enhanced Company Info */}
           <div className="lg:col-span-4 md:col-span-6">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center">
                 <img 
                   src="/logo.png" 
-                  alt="6V" 
-                  className="w-9 h-9 object-contain"
+                  alt="Company Logo" 
+                  className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300"
+                  data-testid="logo"
                 />
               </div>
               <div>
-                {/* <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
-                  6VC Consulting
-                </h3> */}
-                {/* <span className="text-sm text-slate-400 font-medium tracking-wider">IT CONSULTING</span> */}
+                
+                
               </div>
             </div>
             <p className="text-slate-300 font-inter mb-6 leading-relaxed max-w-md" data-testid="footer-company-description">
@@ -188,7 +187,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-slate-400 font-inter" data-testid="footer-copyright">
-                &copy; 2024 TechForward Solutions. All rights reserved.
+                &copy; 2024 6VC IT Consulting. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm">
                 <button className="text-slate-400 hover:text-[#dfeef1] transition-colors duration-200">Privacy Policy</button>

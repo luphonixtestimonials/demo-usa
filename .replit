@@ -10,7 +10,7 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 35127
+localPort = 33903
 externalPort = 3000
 
 [[ports]]
@@ -25,25 +25,16 @@ externalPort = 3002
 runButton = "Project"
 
 [[workflows.workflow]]
-name = "zip"
-mode = "sequential"
-author = 47437621
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "zip -r ../archive_name.zip ."
-
-[[workflows.workflow]]
 name = "Project"
 mode = "parallel"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Start application"
+args = "Development Server"
 
 [[workflows.workflow]]
-name = "Start application"
+name = "Development Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
@@ -54,7 +45,16 @@ waitForPort = 5000
 [workflows.workflow.metadata]
 outputType = "webview"
 
+[[workflows.workflow]]
+name = "zip"
+mode = "sequential"
+author = 47437621
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "zip -r ../archive_name.zip ."
+
 [deployment]
 deploymentTarget = "autoscale"
-run = ["npm", "start"]
+run = ["tsx", "server/index.ts"]
 build = ["npm", "run", "build"]

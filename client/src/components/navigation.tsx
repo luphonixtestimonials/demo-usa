@@ -38,7 +38,7 @@ export default function Navigation() {
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-400 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <div className="w-6 h-6 bg-[#dfeef1] rounded-lg"></div>
+                <span className="text-white font-bold text-xs tracking-tight">6vc</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl font-bold font-poppins text-blue-600" data-testid="logo" style={{letterSpacing: '0.05em'}}>
@@ -48,7 +48,7 @@ export default function Navigation() {
               </div>
             </div>
           </div>
-          
+
           {/* Professional Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
             <button 
@@ -83,7 +83,7 @@ export default function Navigation() {
               Contact
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </button>
-            
+
             {/* CTA Button */}
             <div className="ml-6 pl-6 border-l border-slate-200">
               <button 
@@ -95,7 +95,7 @@ export default function Navigation() {
               </button>
             </div>
           </div>
-          
+
           {/* Enhanced Mobile menu button */}
           <div className="md:hidden">
             <button 
@@ -110,7 +110,7 @@ export default function Navigation() {
             </button>
           </div>
         </div>
-        
+
         {/* Enhanced Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-[#dfeef1]/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">

@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Enhanced Company Info */}
           <div className="lg:col-span-4 md:col-span-6">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#122458] rounded-xl flex items-center justify-center">
                 <img src={logo} alt="6VC Logo" className="w-10 h-10 object-contain" />
               </div>
               <div>

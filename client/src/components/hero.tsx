@@ -84,7 +84,7 @@ export default function Hero() {
             {/* Enhanced Trust Indicators */}
             <div className="flex flex-wrap items-center gap-8 justify-center lg:justify-start">
               <div className="flex items-center space-x-3 text-[#dfeef1]/70">
-                <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#122458] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-[#dfeef1]/70">
-                <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#122458] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
@@ -102,7 +102,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-[#dfeef1]/70">
-                <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-[#122458] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
@@ -153,7 +153,7 @@ export default function Hero() {
                     <div className="absolute bottom-6 left-6 right-6">
                       <div className="bg-[#dfeef1]/90 backdrop-blur-xl rounded-2xl p-6 border border-[#dfeef1]/20">
                         <div className="flex items-center space-x-3 mb-3">
-                          <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
+                          <div className="w-8 h-8 bg-[#122458] rounded-lg flex items-center justify-center">
                             <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                           </div>
                           <div>

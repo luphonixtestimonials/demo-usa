@@ -38,7 +38,7 @@ export default function Navigation() {
           {/* Enhanced Logo */}
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-12 h-12 bg-[#122458] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <img src={logo} alt="6VC Logo" className="w-10 h-10 object-contain" />
               </div>
               <div className="flex flex-col">

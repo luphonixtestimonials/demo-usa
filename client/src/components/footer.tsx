@@ -21,13 +21,17 @@ export default function Footer() {
           <div className="lg:col-span-4 md:col-span-6">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xs tracking-tight">6vc</span>
+                <img 
+                  src="/logo.png" 
+                  alt="6V" 
+                  className="w-9 h-9 object-contain"
+                />
               </div>
               <div>
-                <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
+                {/* <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
                   6VC Consulting
-                </h3>
-                <span className="text-sm text-slate-400 font-medium tracking-wider">IT CONSULTING</span>
+                </h3> */}
+                {/* <span className="text-sm text-slate-400 font-medium tracking-wider">IT CONSULTING</span> */}
               </div>
             </div>
             <p className="text-slate-300 font-inter mb-6 leading-relaxed max-w-md" data-testid="footer-company-description">

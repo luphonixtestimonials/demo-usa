@@ -38,11 +38,11 @@ export default function Navigation() {
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-400 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <div className="w-6 h-6 bg-white rounded-lg"></div>
+                <div className="w-6 h-6 bg-[#dfeef1] rounded-lg"></div>
               </div>
               <div className="flex flex-col">
-                <span className={`text-4xl font-bold font-poppins ${isScrolled ? 'text-slate-800' : 'text-[#dfeef1]'}`} data-testid="logo" style={{letterSpacing: '0.05em'}}>
-                  6vc
+                <span className="text-4xl font-bold font-poppins text-blue-600" data-testid="logo" style={{letterSpacing: '0.05em'}}>
+                  6VC
                 </span>
                 <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>IT CONSULTING</span>
               </div>

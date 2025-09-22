@@ -56,5 +56,5 @@ args = "zip -r ../archive_name.zip ."
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["tsx", "server/index.ts"]
+run = ["npm", "run", "start"]
 build = ["npm", "run", "build"]

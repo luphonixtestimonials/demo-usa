@@ -10,6 +10,10 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
+localPort = 33483
+externalPort = 3003
+
+[[ports]]
 localPort = 33903
 externalPort = 3000
 
@@ -56,5 +60,5 @@ args = "zip -r ../archive_name.zip ."
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["tsx", "server/index.ts"]
+run = ["npm", "run", "start"]
 build = ["npm", "run", "build"]

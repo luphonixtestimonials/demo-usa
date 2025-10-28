@@ -247,14 +247,19 @@ export default function Services() {
                       </ul>
                     </CardItem>
                     
-                    {/* Learn more link */}
+                    {/* Learn more link with dropdown */}
                     <CardItem translateZ="80" className="mt-6 pt-6 border-t border-slate-600 group-hover/card:border-slate-500">
-                      <button className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm group-hover/card:translate-x-1 transition-all duration-300">
-                        Learn more
-                        <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover/card:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </button>
+                      <div className="flex items-center justify-between">
+                        <a 
+                          href={`/services/${service.id}`}
+                          className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm group-hover/card:translate-x-1 transition-all duration-300"
+                        >
+                          Learn more
+                          <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover/card:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </a>
+                      </div>
                     </CardItem>
                   </div>
                 </CardBody>

@@ -1,5 +1,5 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { 
   Lightbulb, 
   Shield, 
@@ -12,9 +12,17 @@ import {
   BarChart3, 
   Clipboard, 
   Settings, 
-  UserCheck 
+  UserCheck,
+  X
 } from "lucide-react";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 const services = [
   {
@@ -27,7 +35,32 @@ const services = [
       "Machine Learning Implementation",
       "Predictive Analytics",
       "Business Intelligence Dashboards"
-    ]
+    ],
+    detailedInfo: {
+      overview: "Transform your business with cutting-edge AI and analytics solutions that turn data into actionable insights. Our comprehensive services help you leverage machine learning, predictive modeling, and advanced analytics to gain competitive advantages.",
+      capabilities: [
+        "Custom ML models tailored to your business needs",
+        "Advanced predictive analytics and forecasting",
+        "Interactive dashboards with real-time insights",
+        "Natural language processing and text analytics",
+        "Computer vision and image recognition",
+        "Automated decision-making systems"
+      ],
+      benefits: [
+        "Reduce operational costs by up to 40%",
+        "Improve decision-making accuracy",
+        "Gain competitive advantage through insights",
+        "Scale operations without proportional cost increases",
+        "Identify new revenue opportunities"
+      ],
+      useCases: [
+        "Customer behavior analysis and segmentation",
+        "Fraud detection and prevention",
+        "Supply chain optimization",
+        "Predictive maintenance",
+        "Sentiment analysis and social listening"
+      ]
+    }
   },
   {
     id: 2,
@@ -39,7 +72,32 @@ const services = [
       "Cloud Migration & Strategy",
       "DevOps Implementation",
       "Infrastructure Monitoring"
-    ]
+    ],
+    detailedInfo: {
+      overview: "Accelerate your digital transformation with enterprise-grade cloud solutions. We help you migrate to the cloud, optimize your infrastructure, and implement modern DevOps practices for maximum agility and cost efficiency.",
+      capabilities: [
+        "Multi-cloud and hybrid cloud architecture",
+        "Cloud-native application development",
+        "Kubernetes and container orchestration",
+        "Serverless architecture implementation",
+        "CI/CD pipeline automation",
+        "Cloud cost optimization strategies"
+      ],
+      benefits: [
+        "Reduce infrastructure costs by up to 40%",
+        "Scale resources on-demand automatically",
+        "Improve application reliability to 99.99% uptime",
+        "Accelerate deployment cycles from weeks to hours",
+        "Enhanced disaster recovery capabilities"
+      ],
+      useCases: [
+        "Legacy system migration to cloud",
+        "DevOps automation and CI/CD implementation",
+        "Microservices architecture design",
+        "Multi-cloud strategy and implementation",
+        "Cloud security and compliance"
+      ]
+    }
   },
   {
     id: 3,
@@ -51,7 +109,32 @@ const services = [
       "Legacy System Migration",
       "API Development & Integration",
       "User Experience Optimization"
-    ]
+    ],
+    detailedInfo: {
+      overview: "Modernize your technology landscape with our comprehensive digital transformation services. We help you migrate from legacy systems to modern platforms, improve user experiences, and accelerate innovation.",
+      capabilities: [
+        "Legacy system assessment and migration planning",
+        "Microservices architecture design",
+        "API-first development approach",
+        "Progressive web applications (PWA)",
+        "Mobile-first responsive design",
+        "Cloud-native application refactoring"
+      ],
+      benefits: [
+        "Reduce technical debt by 60%",
+        "Improve system performance by 3x",
+        "Lower maintenance costs by 40-50%",
+        "Enable faster feature deployment",
+        "Future-proof your technology stack"
+      ],
+      useCases: [
+        "Monolith to microservices transformation",
+        "Legacy application modernization",
+        "API ecosystem development",
+        "Mobile app development",
+        "UI/UX redesign and optimization"
+      ]
+    }
   },
   {
     id: 4,
@@ -63,7 +146,32 @@ const services = [
       "Data Architecture Design",
       "Database Optimization",
       "Data Governance & Privacy"
-    ]
+    ],
+    detailedInfo: {
+      overview: "Unlock the full potential of your data with comprehensive data management solutions. We help you organize, govern, and leverage your data assets to drive business value and ensure compliance.",
+      capabilities: [
+        "Data architecture and modeling",
+        "Master data management (MDM)",
+        "Data quality and cleansing",
+        "Data governance frameworks",
+        "GDPR and compliance management",
+        "Data warehouse and lake design"
+      ],
+      benefits: [
+        "Improve data accuracy from 60% to 95%+",
+        "Reduce data redundancy by 40%",
+        "Enable faster data-driven decisions",
+        "Ensure regulatory compliance",
+        "Create single source of truth"
+      ],
+      useCases: [
+        "Enterprise data warehouse implementation",
+        "Master data management initiatives",
+        "Data quality improvement programs",
+        "Data governance framework setup",
+        "GDPR compliance implementation"
+      ]
+    }
   },
   {
     id: 5,
@@ -75,7 +183,32 @@ const services = [
       "Security Audits & Assessments",
       "Incident Response Planning",
       "Compliance Management"
-    ]
+    ],
+    detailedInfo: {
+      overview: "Protect your business with enterprise-grade cybersecurity solutions. Our comprehensive services help you identify vulnerabilities, prevent attacks, and maintain compliance with industry regulations.",
+      capabilities: [
+        "Security audits and penetration testing",
+        "24/7 threat detection and response",
+        "Security Operations Center (SOC)",
+        "Compliance and regulatory support",
+        "Identity and access management (IAM)",
+        "Security awareness training"
+      ],
+      benefits: [
+        "Reduce security incidents by 80%",
+        "Achieve compliance certification",
+        "24/7 threat monitoring and response",
+        "Protect sensitive data and IP",
+        "Build customer trust and confidence"
+      ],
+      useCases: [
+        "SOC 2 and ISO 27001 certification",
+        "Penetration testing and vulnerability assessments",
+        "Incident response and recovery",
+        "Security awareness training programs",
+        "Zero-trust architecture implementation"
+      ]
+    }
   },
   {
     id: 6,
@@ -87,11 +220,39 @@ const services = [
       "Technology Strategy Planning",
       "Program & Project Management",
       "Organizational Change Management"
-    ]
+    ],
+    detailedInfo: {
+      overview: "Drive successful technology initiatives with expert consulting and program management. Our experienced professionals help you navigate complex transformations, align technology with business goals, and ensure successful adoption.",
+      capabilities: [
+        "Technology strategy and planning",
+        "Program and project management",
+        "Organizational change management",
+        "Business process optimization",
+        "Vendor selection and management",
+        "Digital transformation consulting"
+      ],
+      benefits: [
+        "Accelerate project delivery by 40%",
+        "Reduce project risks and cost overruns by 60%",
+        "Ensure stakeholder alignment",
+        "Maximize ROI on technology investments",
+        "Build internal capabilities"
+      ],
+      useCases: [
+        "Enterprise transformation programs",
+        "Technology roadmap development",
+        "PMO setup and optimization",
+        "Change management for large initiatives",
+        "Vendor evaluation and selection"
+      ]
+    }
   }
 ];
 
 export default function Services() {
+  const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -109,6 +270,12 @@ export default function Services() {
 
     return () => observer.disconnect();
   }, []);
+
+  const handleLearnMore = (service: typeof services[0], e: React.MouseEvent) => {
+    e.preventDefault();
+    setSelectedService(service);
+    setIsDialogOpen(true);
+  };
 
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-[#dfeef1] to-[#dfeef1]">
@@ -187,18 +354,18 @@ export default function Services() {
                       </ul>
                     </CardItem>
                     
-                    {/* Learn more link with dropdown */}
+                    {/* Learn more button to open dialog */}
                     <CardItem translateZ="80" className="mt-6 pt-6 border-t border-slate-600 group-hover/card:border-slate-500">
                       <div className="flex items-center justify-between">
-                        <a 
-                          href={service.link}
+                        <button 
+                          onClick={(e) => handleLearnMore(service, e)}
                           className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm group-hover/card:translate-x-1 transition-all duration-300"
                         >
                           Learn more
                           <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover/card:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                           </svg>
-                        </a>
+                        </button>
                       </div>
                     </CardItem>
                   </div>
@@ -223,6 +390,92 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+      {/* Service Details Dialog */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          {selectedService && (
+            <>
+              <DialogHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 bg-[#122458] rounded-xl flex items-center justify-center">
+                    {React.createElement(selectedService.icon, { className: "w-7 h-7 text-[#dfeef1]" })}
+                  </div>
+                  <DialogTitle className="text-3xl font-bold font-poppins text-slate-900">
+                    {selectedService.title}
+                  </DialogTitle>
+                </div>
+                <DialogDescription className="text-lg text-slate-600">
+                  {selectedService.detailedInfo.overview}
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="space-y-6 mt-6">
+                {/* Capabilities */}
+                <div>
+                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3">
+                    Core Capabilities
+                  </h3>
+                  <ul className="grid md:grid-cols-2 gap-3">
+                    {selectedService.detailedInfo.capabilities.map((capability, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-700">{capability}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Benefits */}
+                <div>
+                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3">
+                    Business Benefits
+                  </h3>
+                  <ul className="grid md:grid-cols-2 gap-3">
+                    {selectedService.detailedInfo.benefits.map((benefit, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-700">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Use Cases */}
+                <div>
+                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3">
+                    Use Cases
+                  </h3>
+                  <ul className="grid md:grid-cols-2 gap-3">
+                    {selectedService.detailedInfo.useCases.map((useCase, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-700">{useCase}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex gap-4 pt-4 border-t">
+                  <a 
+                    href={selectedService.link}
+                    className="flex-1 px-6 py-3 bg-[#122458] text-white rounded-xl font-semibold text-center hover:bg-[#164070] transition-colors duration-300"
+                  >
+                    View Full Details
+                  </a>
+                  <a 
+                    href="/#contact"
+                    className="flex-1 px-6 py-3 border-2 border-[#122458] text-[#122458] rounded-xl font-semibold text-center hover:bg-[#122458] hover:text-white transition-all duration-300"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }

@@ -32,7 +32,6 @@ const services = [
     description: "Harness the power of artificial intelligence and data analytics to unlock insights and automate processes.",
     icon: Lightbulb,
     link: "/ai-analytics-service",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     features: [
       "Machine Learning Implementation",
       "Predictive Analytics",
@@ -70,7 +69,6 @@ const services = [
     description: "Scale your operations with robust cloud infrastructure and modern deployment strategies.",
     icon: Cloud,
     link: "/cloud-services",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
     features: [
       "Cloud Migration & Strategy",
       "DevOps Implementation",
@@ -108,7 +106,6 @@ const services = [
     description: "Transform legacy systems into modern, efficient digital platforms that drive business growth.",
     icon: Zap,
     link: "/digital-modernization",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop",
     features: [
       "Legacy System Migration",
       "API Development & Integration",
@@ -146,7 +143,6 @@ const services = [
     description: "Organize, secure, and leverage your data assets for strategic business advantages.",
     icon: Database,
     link: "/data-management-services",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
     features: [
       "Data Architecture Design",
       "Database Optimization",
@@ -184,7 +180,6 @@ const services = [
     description: "Protect your digital assets with comprehensive security solutions and threat management.",
     icon: Shield,
     link: "/cybersecurity-services",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop",
     features: [
       "Security Audits & Assessments",
       "Incident Response Planning",
@@ -222,7 +217,6 @@ const services = [
     description: "Expert consulting and program management to ensure successful delivery of technology initiatives.",
     icon: Settings,
     link: "/professional-services",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
     features: [
       "Technology Strategy Planning",
       "Program & Project Management",
@@ -321,15 +315,6 @@ export default function Services() {
                   
                   {/* Card content */}
                   <div className="relative z-10">
-                    {/* Service Image */}
-                    <CardItem translateZ="100" className="mb-6 rounded-xl overflow-hidden">
-                      <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-48 object-cover group-hover/card:scale-105 transition-transform duration-500"
-                      />
-                    </CardItem>
-                    
                     {/* Icon with professional styling */}
                     <CardItem translateZ="50" className="mb-6">
                       <CardItem translateZ="60" className="flex items-center justify-center w-14 h-14 bg-[hsl(220,91%,15%)] rounded-xl shadow-lg transition-all duration-300">

@@ -10,10 +10,6 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 33483
-externalPort = 3003
-
-[[ports]]
 localPort = 33903
 externalPort = 3000
 
@@ -25,6 +21,10 @@ externalPort = 3001
 localPort = 39583
 externalPort = 3002
 
+[[ports]]
+localPort = 40717
+externalPort = 3003
+
 [workflows]
 runButton = "Project"
 
@@ -35,19 +35,7 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Development Server"
-
-[[workflows.workflow]]
-name = "Development Server"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm run dev"
-waitForPort = 5000
-
-[workflows.workflow.metadata]
-outputType = "webview"
+args = "Start application"
 
 [[workflows.workflow]]
 name = "zip"
@@ -57,6 +45,18 @@ author = 47437621
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "zip -r ../archive_name.zip ."
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
 
 [deployment]
 deploymentTarget = "autoscale"

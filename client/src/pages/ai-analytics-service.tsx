@@ -176,8 +176,9 @@ export default function AIAnalyticsService() {
       {/* Overview Section */}
       <section className="py-20 bg-[#dfeef1]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Main Overview with Image */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div>
+            <div className="order-2 md:order-1">
               <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full border border-blue-200 text-blue-700 text-sm font-medium mb-6">
                 <Brain className="w-4 h-4 mr-2" />
                 Strategic Intelligence
@@ -186,13 +187,10 @@ export default function AIAnalyticsService() {
                 Transform Data Into Strategic Advantage
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                In today's data-driven world, organizations that effectively leverage AI and analytics gain a significant competitive edge. Our AI and Analytics services help you extract meaningful insights from your data, automate complex processes, and make informed decisions that drive business growth. We specialize in transforming raw data into strategic assets through advanced machine learning models, predictive analytics, and intelligent automation systems.
+                In today's data-driven world, organizations that effectively leverage AI and analytics gain a significant competitive edge. Our AI and Analytics services help you extract meaningful insights from your data, automate complex processes, and make informed decisions that drive business growth.
               </p>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                Our team of data scientists and AI engineers combines cutting-edge machine learning algorithms with deep industry expertise to deliver solutions that are not only technically advanced but also aligned with your business objectives. From natural language processing to computer vision, we leverage the latest AI technologies including TensorFlow, PyTorch, scikit-learn, and cloud-based AI services from AWS, Azure, and Google Cloud.
-              </p>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Whether you're looking to implement your first ML model or scale existing analytics capabilities, we provide end-to-end support from data strategy and architecture through model development, deployment, and continuous optimization. Our solutions are production-ready, scalable, and designed to deliver measurable ROI within months, not years.
+                Our team of data scientists and AI engineers combines cutting-edge machine learning algorithms with deep industry expertise to deliver solutions that are not only technically advanced but also aligned with your business objectives. From natural language processing to computer vision, we leverage the latest AI technologies including TensorFlow, PyTorch, scikit-learn, and cloud-based AI services.
               </p>
               
               <div className="flex flex-wrap gap-3">
@@ -203,37 +201,43 @@ export default function AIAnalyticsService() {
               </div>
             </div>
             
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
-                  <TrendingUp className="w-12 h-12 mb-4 opacity-80" />
-                  <div className="text-5xl font-bold mb-2">95%</div>
-                  <div className="text-blue-100 font-medium">Prediction Accuracy</div>
-                </div>
-                <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
-                  <Zap className="w-12 h-12 mb-4 opacity-80" />
-                  <div className="text-5xl font-bold mb-2">40%</div>
-                  <div className="text-teal-100 font-medium">Cost Reduction</div>
-                </div>
-                <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
-                  <Database className="w-12 h-12 mb-4 opacity-80" />
-                  <div className="text-5xl font-bold mb-2">3x</div>
-                  <div className="text-blue-100 font-medium">Faster Insights</div>
-                </div>
-                <div className="bg-gradient-to-br from-teal-600 to-teal-700 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
-                  <Brain className="w-12 h-12 mb-4 opacity-80" />
-                  <div className="text-5xl font-bold mb-2">24/7</div>
-                  <div className="text-teal-100 font-medium">Automated Analysis</div>
-                </div>
+            <div className="order-1 md:order-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" 
+                  alt="AI Analytics Platform" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
-              
-              {/* Decorative element */}
-              <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
+            </div>
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
+              <TrendingUp className="w-12 h-12 mb-4 opacity-80" />
+              <div className="text-5xl font-bold mb-2">95%</div>
+              <div className="text-blue-100 font-medium">Prediction Accuracy</div>
+            </div>
+            <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
+              <Zap className="w-12 h-12 mb-4 opacity-80" />
+              <div className="text-5xl font-bold mb-2">40%</div>
+              <div className="text-teal-100 font-medium">Cost Reduction</div>
+            </div>
+            <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
+              <Database className="w-12 h-12 mb-4 opacity-80" />
+              <div className="text-5xl font-bold mb-2">3x</div>
+              <div className="text-blue-100 font-medium">Faster Insights</div>
+            </div>
+            <div className="bg-gradient-to-br from-teal-600 to-teal-700 p-8 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300">
+              <Brain className="w-12 h-12 mb-4 opacity-80" />
+              <div className="text-5xl font-bold mb-2">24/7</div>
+              <div className="text-teal-100 font-medium">Automated Analysis</div>
             </div>
           </div>
           
           {/* Visual Showcase */}
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 

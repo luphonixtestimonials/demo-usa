@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { 
   Lightbulb, 
   Shield, 
@@ -13,7 +13,8 @@ import {
   Clipboard, 
   Settings, 
   UserCheck,
-  X
+  X,
+  CheckCircle2
 } from "lucide-react";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import {

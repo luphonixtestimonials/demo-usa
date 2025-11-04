@@ -155,27 +155,39 @@ export default function DataManagementServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" 
-                  alt="Data Quality" 
+                  alt="Data Quality Management and Cleansing" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Data Quality</h3>
-                <p className="text-slate-600">Implement automated data cleansing and validation processes.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Data Quality Management</h3>
+                <p className="text-slate-600 mb-3">Implement automated data cleansing, validation, standardization, and enrichment using tools like Informatica, Talend, and custom Python/Spark pipelines.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Data profiling & quality scorecards</li>
+                  <li>• Deduplication & matching algorithms</li>
+                  <li>• Real-time validation rules</li>
+                  <li>• Data quality monitoring dashboards</li>
+                </ul>
               </div>
             </div>
             
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop" 
-                  alt="Data Governance" 
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop" 
+                  alt="Data Governance Framework and Policies" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Data Governance</h3>
-                <p className="text-slate-600">Establish policies and procedures for data stewardship.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Data Governance</h3>
+                <p className="text-slate-600 mb-3">Establish comprehensive governance frameworks with data catalogs (Collibra, Alation), metadata management, data lineage tracking, and privacy compliance (GDPR, CCPA).</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Data stewardship & ownership models</li>
+                  <li>• Access control & classification</li>
+                  <li>• Automated audit trails & compliance</li>
+                  <li>• Data lifecycle management</li>
+                </ul>
               </div>
             </div>
             
@@ -183,13 +195,19 @@ export default function DataManagementServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" 
-                  alt="Data Warehouse" 
+                  alt="Modern Data Warehouse and Lake Architecture" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Data Warehousing</h3>
-                <p className="text-slate-600">Design scalable data warehouse solutions for analytics.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Data Platforms</h3>
+                <p className="text-slate-600 mb-3">Design modern data warehouses (Snowflake, Redshift, BigQuery) and data lakes (S3, ADLS, GCS) with ELT/ETL pipelines using Airflow, dbt, and Databricks.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Dimensional modeling & star schemas</li>
+                  <li>• Real-time streaming (Kafka, Kinesis)</li>
+                  <li>• Data lake house architecture (Delta Lake)</li>
+                  <li>• Performance optimization & partitioning</li>
+                </ul>
               </div>
             </div>
           </div>

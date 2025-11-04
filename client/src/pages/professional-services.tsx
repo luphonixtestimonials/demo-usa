@@ -155,13 +155,19 @@ export default function ProfessionalServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop" 
-                  alt="Strategy Consulting" 
+                  alt="Technology Strategy and Roadmap Development" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Strategy Consulting</h3>
-                <p className="text-slate-600">Develop comprehensive technology roadmaps aligned with business goals.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Strategy Consulting</h3>
+                <p className="text-slate-600 mb-3">Develop comprehensive 3-5 year technology roadmaps using frameworks like TOGAF, Zachman, and value stream mapping to align IT investments with business objectives and competitive strategy.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Current state assessment & gap analysis</li>
+                  <li>• Technology trend analysis & impact</li>
+                  <li>• Business capability modeling</li>
+                  <li>• Investment prioritization & TCO analysis</li>
+                </ul>
               </div>
             </div>
             
@@ -169,13 +175,19 @@ export default function ProfessionalServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop" 
-                  alt="Program Management" 
+                  alt="Enterprise Program and Project Management" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Program Management</h3>
-                <p className="text-slate-600">Expert oversight ensuring on-time, on-budget project delivery.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Program Management</h3>
+                <p className="text-slate-600 mb-3">Expert PMO leadership using Agile (SAFe, Scrum), Waterfall, and hybrid methodologies with tools like Jira, Azure DevOps, and MS Project ensuring on-time, on-budget delivery.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Portfolio & resource management</li>
+                  <li>• Risk & issue tracking (RAID logs)</li>
+                  <li>• Stakeholder communication plans</li>
+                  <li>• Quality assurance & governance</li>
+                </ul>
               </div>
             </div>
             
@@ -183,13 +195,19 @@ export default function ProfessionalServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop" 
-                  alt="Change Management" 
+                  alt="Organizational Change Management and Adoption" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Change Management</h3>
-                <p className="text-slate-600">Drive adoption and minimize resistance during transformations.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Change Management</h3>
+                <p className="text-slate-600 mb-3">Drive successful adoption using ADKAR and Prosci methodologies with comprehensive training programs, communication strategies, and resistance management achieving 85%+ user adoption.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Impact assessment & stakeholder analysis</li>
+                  <li>• Training needs analysis & delivery</li>
+                  <li>• Change champion networks</li>
+                  <li>• Adoption metrics & feedback loops</li>
+                </ul>
               </div>
             </div>
           </div>

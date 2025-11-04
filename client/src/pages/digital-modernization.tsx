@@ -154,14 +154,20 @@ export default function DigitalModernization() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" 
-                  alt="Legacy Migration" 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop" 
+                  alt="Legacy System Migration and Modernization" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Legacy Migration</h3>
-                <p className="text-slate-600">Successfully migrated 20-year-old mainframe systems to modern cloud architecture.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Legacy Modernization</h3>
+                <p className="text-slate-600 mb-3">Successfully migrated mainframe (COBOL, AS/400) and legacy .NET/Java systems to modern cloud-native architectures using microservices, containers, and serverless patterns.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Strangler fig migration pattern</li>
+                  <li>• Database modernization (Oracle → PostgreSQL)</li>
+                  <li>• Code refactoring & technical debt reduction</li>
+                  <li>• Automated regression testing suites</li>
+                </ul>
               </div>
             </div>
             
@@ -169,13 +175,19 @@ export default function DigitalModernization() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" 
-                  alt="API Development" 
+                  alt="API-First Architecture and Integration" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">API Integration</h3>
-                <p className="text-slate-600">Built modern API layer enabling seamless third-party integrations.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">API Ecosystem</h3>
+                <p className="text-slate-600 mb-3">Built comprehensive API layers using REST, GraphQL, and gRPC with API gateways (Kong, Apigee), enabling seamless third-party integrations and partner ecosystems.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• OpenAPI/Swagger documentation</li>
+                  <li>• API versioning & backward compatibility</li>
+                  <li>• Rate limiting & throttling strategies</li>
+                  <li>• OAuth 2.0 & JWT authentication</li>
+                </ul>
               </div>
             </div>
             
@@ -183,13 +195,19 @@ export default function DigitalModernization() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" 
-                  alt="Mobile First" 
+                  alt="Progressive Web Apps and Mobile Development" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Mobile-First Design</h3>
-                <p className="text-slate-600">Transformed desktop-only applications into responsive mobile experiences.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Mobile & PWA</h3>
+                <p className="text-slate-600 mb-3">Transformed desktop applications into responsive PWAs and native mobile apps using React Native, Flutter, and modern web frameworks (React, Vue, Angular).</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Offline-first architecture & service workers</li>
+                  <li>• App shell & lazy loading patterns</li>
+                  <li>• Cross-platform development (iOS/Android)</li>
+                  <li>• Performance optimization (Lighthouse 95+)</li>
+                </ul>
               </div>
             </div>
           </div>

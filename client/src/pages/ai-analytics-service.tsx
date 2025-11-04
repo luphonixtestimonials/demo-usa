@@ -186,10 +186,13 @@ export default function AIAnalyticsService() {
                 Transform Data Into Strategic Advantage
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                In today's data-driven world, organizations that effectively leverage AI and analytics gain a significant competitive edge. Our AI and Analytics services help you extract meaningful insights from your data, automate complex processes, and make informed decisions that drive business growth.
+                In today's data-driven world, organizations that effectively leverage AI and analytics gain a significant competitive edge. Our AI and Analytics services help you extract meaningful insights from your data, automate complex processes, and make informed decisions that drive business growth. We specialize in transforming raw data into strategic assets through advanced machine learning models, predictive analytics, and intelligent automation systems.
+              </p>
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                Our team of data scientists and AI engineers combines cutting-edge machine learning algorithms with deep industry expertise to deliver solutions that are not only technically advanced but also aligned with your business objectives. From natural language processing to computer vision, we leverage the latest AI technologies including TensorFlow, PyTorch, scikit-learn, and cloud-based AI services from AWS, Azure, and Google Cloud.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                We combine cutting-edge machine learning algorithms with deep industry expertise to deliver solutions that are not only technically advanced but also aligned with your business objectives.
+                Whether you're looking to implement your first ML model or scale existing analytics capabilities, we provide end-to-end support from data strategy and architecture through model development, deployment, and continuous optimization. Our solutions are production-ready, scalable, and designed to deliver measurable ROI within months, not years.
               </p>
               
               <div className="flex flex-wrap gap-3">
@@ -235,27 +238,37 @@ export default function AIAnalyticsService() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" 
-                  alt="Data Visualization" 
+                  alt="Interactive Analytics Dashboards" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Interactive Dashboards</h3>
-                <p className="text-slate-600">Real-time data visualization that turns complex metrics into actionable insights.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Interactive Dashboards</h3>
+                <p className="text-slate-600 mb-3">Real-time data visualization dashboards built with Power BI, Tableau, and custom D3.js visualizations that transform complex metrics into actionable insights.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Executive-level KPI tracking</li>
+                  <li>• Drill-down capabilities</li>
+                  <li>• Mobile-responsive design</li>
+                </ul>
               </div>
             </div>
             
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop" 
-                  alt="Machine Learning" 
+                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" 
+                  alt="Machine Learning Models Training" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">ML Models</h3>
-                <p className="text-slate-600">Custom-trained machine learning models tailored to your specific business needs.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Custom ML Models</h3>
+                <p className="text-slate-600 mb-3">Production-ready machine learning models trained on your data using supervised, unsupervised, and deep learning techniques for classification, regression, and clustering.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Neural networks & deep learning</li>
+                  <li>• Feature engineering & selection</li>
+                  <li>• Model explainability (SHAP, LIME)</li>
+                </ul>
               </div>
             </div>
             
@@ -263,13 +276,18 @@ export default function AIAnalyticsService() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" 
-                  alt="Analytics Platform" 
+                  alt="Advanced Analytics Platforms" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Advanced Analytics</h3>
-                <p className="text-slate-600">Sophisticated analysis tools that uncover hidden patterns and opportunities.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Advanced Analytics</h3>
+                <p className="text-slate-600 mb-3">Sophisticated statistical analysis, time series forecasting, and prescriptive analytics tools that uncover hidden patterns and recommend optimal actions.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Predictive modeling (ARIMA, Prophet)</li>
+                  <li>• Anomaly detection algorithms</li>
+                  <li>• A/B testing frameworks</li>
+                </ul>
               </div>
             </div>
           </div>

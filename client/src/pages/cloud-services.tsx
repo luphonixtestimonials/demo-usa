@@ -89,9 +89,15 @@ export default function CloudServices() {
             <h2 className="text-4xl font-bold font-poppins text-slate-900 mb-4">
               Comprehensive Cloud Capabilities
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              From migration to optimization, we handle every aspect of your cloud journey
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-6">
+              From migration to optimization, we handle every aspect of your cloud journey with expertise across AWS, Azure, and Google Cloud Platform
             </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-lg font-semibold">AWS Certified</span>
+              <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-semibold">Azure Expert</span>
+              <span className="px-4 py-2 bg-red-100 text-red-700 rounded-lg font-semibold">Google Cloud Partner</span>
+              <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg font-semibold">Kubernetes Certified</span>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -155,41 +161,59 @@ export default function CloudServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop" 
-                  alt="Cloud Migration" 
+                  alt="Cloud Migration Strategy and Execution" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Cloud Migration</h3>
-                <p className="text-slate-600">Seamless transition from on-premise to cloud infrastructure with zero downtime.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Cloud Migration</h3>
+                <p className="text-slate-600 mb-3">Seamless transition from on-premise to cloud infrastructure with zero downtime using lift-and-shift, re-platforming, or cloud-native refactoring strategies.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• AWS Migration Hub & Azure Migrate</li>
+                  <li>• Database migration (DMS, Dataflow)</li>
+                  <li>• Application dependency mapping</li>
+                  <li>• Rollback & disaster recovery plans</li>
+                </ul>
               </div>
             </div>
             
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=300&fit=crop" 
-                  alt="DevOps" 
+                  src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=300&fit=crop" 
+                  alt="DevOps and CI/CD Automation" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">DevOps Automation</h3>
-                <p className="text-slate-600">Streamline deployments with CI/CD pipelines and infrastructure as code.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">DevOps Automation</h3>
+                <p className="text-slate-600 mb-3">Streamline deployments with comprehensive CI/CD pipelines using Jenkins, GitLab CI, GitHub Actions, and infrastructure as code with Terraform and CloudFormation.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Automated testing & quality gates</li>
+                  <li>• Blue-green & canary deployments</li>
+                  <li>• Container orchestration (K8s, ECS)</li>
+                  <li>• Monitoring & observability (Prometheus)</li>
+                </ul>
               </div>
             </div>
             
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop" 
-                  alt="Cloud Security" 
+                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop" 
+                  alt="Cloud Security and Compliance" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Cloud Security</h3>
-                <p className="text-slate-600">Enterprise-grade security with compliance and governance frameworks.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Cloud Security</h3>
+                <p className="text-slate-600 mb-3">Enterprise-grade security with compliance frameworks including SOC 2, ISO 27001, HIPAA, and PCI DSS using cloud-native security tools and best practices.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• IAM & zero-trust architecture</li>
+                  <li>• Encryption at rest & in transit</li>
+                  <li>• Security groups & network policies</li>
+                  <li>• Automated compliance scanning</li>
+                </ul>
               </div>
             </div>
           </div>

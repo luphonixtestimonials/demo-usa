@@ -154,14 +154,20 @@ export default function CybersecurityServices() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop" 
-                  alt="Threat Detection" 
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop" 
+                  alt="AI-Powered Threat Detection and Response" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Threat Detection</h3>
-                <p className="text-slate-600">AI-powered threat detection identifying and neutralizing attacks in real-time.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">24/7 Threat Detection</h3>
+                <p className="text-slate-600 mb-3">AI-powered threat detection using SIEM (Splunk, QRadar), EDR (CrowdStrike, SentinelOne), and advanced threat intelligence to identify and neutralize attacks in real-time.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Machine learning anomaly detection</li>
+                  <li>• Behavioral analytics & user profiling</li>
+                  <li>• Automated threat hunting</li>
+                  <li>• Mean time to detect: &lt;5 minutes</li>
+                </ul>
               </div>
             </div>
             
@@ -169,27 +175,39 @@ export default function CybersecurityServices() {
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&h=300&fit=crop" 
-                  alt="Compliance" 
+                  alt="Compliance and Regulatory Frameworks" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Compliance</h3>
-                <p className="text-slate-600">Achieve and maintain SOC 2, ISO 27001, and industry certifications.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Compliance Management</h3>
+                <p className="text-slate-600 mb-3">Achieve and maintain SOC 2 Type II, ISO 27001, PCI DSS, HIPAA, GDPR compliance with comprehensive security controls, documentation, and continuous monitoring.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• Gap assessments & remediation plans</li>
+                  <li>• Policy & procedure development</li>
+                  <li>• Automated compliance scanning</li>
+                  <li>• Annual audits & certifications</li>
+                </ul>
               </div>
             </div>
             
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop" 
-                  alt="Incident Response" 
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" 
+                  alt="Incident Response and Forensics" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Incident Response</h3>
-                <p className="text-slate-600">Rapid response teams minimizing impact of security incidents.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">Incident Response</h3>
+                <p className="text-slate-600 mb-3">Rapid incident response teams with mean time to response under 15 minutes, minimizing impact through containment, eradication, and recovery procedures.</p>
+                <ul className="text-sm text-slate-500 space-y-1">
+                  <li>• 24/7 SOC monitoring & response</li>
+                  <li>• Forensic investigation & analysis</li>
+                  <li>• Playbook-driven response workflows</li>
+                  <li>• Post-incident reporting & lessons learned</li>
+                </ul>
               </div>
             </div>
           </div>

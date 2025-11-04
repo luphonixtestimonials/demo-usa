@@ -394,74 +394,77 @@ export default function Services() {
 
       {/* Service Details Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-white border-2 border-slate-200 shadow-2xl">
           {selectedService && (
             <>
               <DialogHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 bg-[#122458] rounded-xl flex items-center justify-center">
+                  <div className="w-14 h-14 bg-[#122458] rounded-xl flex items-center justify-center shadow-md">
                     {React.createElement(selectedService.icon, { className: "w-7 h-7 text-[#dfeef1]" })}
                   </div>
                   <DialogTitle className="text-3xl font-bold font-poppins text-slate-900">
                     {selectedService.title}
                   </DialogTitle>
                 </div>
-                <DialogDescription className="text-lg text-slate-600">
+                <DialogDescription className="text-lg text-slate-600 leading-relaxed">
                   {selectedService.detailedInfo.overview}
                 </DialogDescription>
               </DialogHeader>
 
               <div className="space-y-6 mt-6">
                 {/* Capabilities */}
-                <div>
-                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3">
+                <div className="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-4 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-green-500 rounded-full"></span>
                     Core Capabilities
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {selectedService.detailedInfo.capabilities.map((capability, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-slate-700">{capability}</span>
+                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-700 text-sm">{capability}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Benefits */}
-                <div>
-                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3">
+                <div className="bg-blue-50 p-5 rounded-lg border border-blue-200">
+                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-4 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-blue-500 rounded-full"></span>
                     Business Benefits
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {selectedService.detailedInfo.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-slate-700">{benefit}</span>
+                        <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-700 text-sm">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Use Cases */}
-                <div>
-                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3">
+                <div className="bg-teal-50 p-5 rounded-lg border border-teal-200">
+                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-4 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-teal-500 rounded-full"></span>
                     Use Cases
                   </h3>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {selectedService.detailedInfo.useCases.map((useCase, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-slate-700">{useCase}</span>
+                        <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-slate-700 text-sm">{useCase}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex gap-4 pt-4 border-t">
+                <div className="flex gap-4 pt-6 border-t-2 border-slate-200 mt-6">
                   <a 
                     href={selectedService.link}
-                    className="flex-1 px-6 py-3 bg-[#122458] text-white rounded-xl font-semibold text-center hover:bg-[#164070] transition-colors duration-300"
+                    className="flex-1 px-6 py-3 bg-[#122458] text-white rounded-xl font-semibold text-center hover:bg-[#164070] hover:shadow-lg transition-all duration-300"
                   >
                     View Full Details
                   </a>

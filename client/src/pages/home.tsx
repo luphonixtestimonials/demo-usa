@@ -91,7 +91,7 @@ export default function Home() {
             <div className="text-center fade-in group" data-testid="stat-experience">
               <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-[#dfeef1]">15+</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">10+</span>
                 </div>
                 <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Years</h3>
                 <p className="text-[#dfeef1]/70 font-inter">of industry expertise and innovation leadership</p>
@@ -106,7 +106,7 @@ export default function Home() {
             <div className="text-center fade-in group" data-testid="stat-projects">
               <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-500 to-green-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-[#dfeef1]">500+</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">100+</span>
                 </div>
                 <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Projects</h3>
                 <p className="text-[#dfeef1]/70 font-inter">successfully delivered across global markets</p>

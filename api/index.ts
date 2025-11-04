@@ -27,7 +27,7 @@ app.use((req: Request, res: Response, next) => {
 
 // API Routes
 app.get("/api/health", (req: Request, res: Response) => {
-  res.json({ status: "OK", message: "TechForward API is running" });
+  res.json({ status: "OK", message: "6vc consulting API is running" });
 });
 
 app.get("/api/services", (req: Request, res: Response) => {

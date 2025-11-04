@@ -148,7 +148,7 @@ export default function EnterpriseManagementService() {
               
               {/* Floating Stats Cards */}
               <div className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4 border-2 border-blue-100 hidden lg:block">
-                <div className="text-3xl font-bold text-blue-600 mb-1">500+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-1">100+</div>
                 <div className="text-xs text-slate-600">Enterprises Served</div>
               </div>
               

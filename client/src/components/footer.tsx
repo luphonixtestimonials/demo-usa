@@ -161,7 +161,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-slate-300">info@techforward.com</p>
+                  <p className="text-slate-300">info@6vc.com</p>
                   <p className="text-slate-500 text-sm">Get in touch</p>
                 </div>
               </div>

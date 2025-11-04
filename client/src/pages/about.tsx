@@ -59,7 +59,7 @@ export default function About() {
                 <p className="text-slate-600 font-medium">Company Founded</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-projects">
-                <div className="text-4xl font-bold text-teal-600 mb-2">500+</div>
+                <div className="text-4xl font-bold text-teal-600 mb-2">100+</div>
                 <p className="text-slate-600 font-medium">Projects Delivered</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-clients">
@@ -134,7 +134,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-4">Proven Expertise</h3>
               <p className="text-slate-600 leading-relaxed">
-                15+ years of experience delivering complex enterprise solutions across industries with certified professionals.
+                10+ years of experience delivering complex enterprise solutions across industries with certified professionals.
               </p>
             </div>
 
@@ -217,7 +217,7 @@ export default function About() {
               <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Emily Patel</h3>
               <p className="text-orange-600 font-medium mb-3">VP of Cybersecurity</p>
               <p className="text-slate-600 leading-relaxed">
-                Certified security expert with 15+ years protecting enterprise infrastructure and leading compliance initiatives.
+                Certified security expert with 10+ years protecting enterprise infrastructure and leading compliance initiatives.
               </p>
             </div>
           </div>

@@ -5,6 +5,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Route, Switch } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 import AIAnalyticsService from "./pages/ai-analytics-service";
 import EnterpriseManagementService from "@/pages/enterprise-management-service";
 import CloudServices from "./pages/cloud-services";
@@ -17,6 +19,8 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
       <Route path="/ai-analytics-service" component={AIAnalyticsService} />
       <Route path="/cloud-services" component={CloudServices} />
       <Route path="/digital-modernization" component={DigitalModernization} />

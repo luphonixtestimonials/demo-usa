@@ -134,32 +134,35 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <button 
-              onClick={() => scrollToSection('about')} 
-              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
-              data-testid="nav-about"
-            >
-              About
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')} 
-              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
-              data-testid="nav-contact"
-            >
-              Contact
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </button>
+            <Link href="/about">
+              <span 
+                className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group cursor-pointer inline-block`}
+                data-testid="nav-about"
+              >
+                About
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span 
+                className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group cursor-pointer inline-block`}
+                data-testid="nav-contact"
+              >
+                Contact
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              </span>
+            </Link>
 
             {/* CTA Button */}
             <div className="ml-6 pl-6 border-l border-slate-200">
-              <button 
-                className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
-                onClick={() => scrollToSection('contact')}
-                data-testid="nav-cta"
-              >
-                Get Started
-              </button>
+              <Link href="/contact">
+                <button 
+                  className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
+                  data-testid="nav-cta"
+                >
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -242,29 +245,35 @@ export default function Navigation() {
                 </Link>
               </div>
 
-              <button 
-                onClick={() => scrollToSection('about')} 
-                className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200"
-                data-testid="mobile-nav-about"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')} 
-                className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200"
-                data-testid="mobile-nav-contact"
-              >
-                Contact
-              </button>
+              <Link href="/about">
+                <span 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
+                  data-testid="mobile-nav-about"
+                >
+                  About
+                </span>
+              </Link>
+              <Link href="/contact">
+                <span 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
+                  data-testid="mobile-nav-contact"
+                >
+                  Contact
+                </span>
+              </Link>
 
               <div className="pt-4 border-t border-slate-200">
-                <button 
-                  className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
-                  onClick={() => scrollToSection('contact')}
-                  data-testid="mobile-nav-cta"
-                >
-                  Get Started
-                </button>
+                <Link href="/contact">
+                  <button 
+                    className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+                    onClick={() => setIsMenuOpen(false)}
+                    data-testid="mobile-nav-cta"
+                  >
+                    Get Started
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

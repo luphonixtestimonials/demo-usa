@@ -4,21 +4,25 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 const features = [
-  "AWS, Azure, and Google Cloud expertise",
-  "Cloud-native application development",
-  "Kubernetes and container orchestration",
-  "Serverless architecture implementation",
-  "Multi-cloud and hybrid cloud strategies",
-  "Cloud cost optimization"
+  "AWS, Azure, and Google Cloud expertise - Certified architects and engineers with deep experience across all major cloud platforms, including advanced services like AWS Lambda, Azure Functions, Google Cloud Run, and proprietary offerings",
+  "Cloud-native application development - Build modern, scalable applications using microservices, containerization, and cloud-native patterns that leverage platform capabilities for maximum performance and reliability",
+  "Kubernetes and container orchestration - Deploy and manage containerized applications with Kubernetes (K8s), including EKS, AKS, GKE, service mesh implementation, auto-scaling, and advanced deployment strategies",
+  "Serverless architecture implementation - Design event-driven, serverless solutions that scale automatically, reduce costs by 60%, and eliminate infrastructure management overhead",
+  "Multi-cloud and hybrid cloud strategies - Avoid vendor lock-in with multi-cloud architectures, integrate on-premise systems with cloud resources, and implement disaster recovery across multiple providers",
+  "Cloud cost optimization - Reduce cloud spending by 30-50% through rightsizing, reserved instances, spot instances, auto-scaling policies, and continuous cost monitoring"
 ];
 
 const benefits = [
-  "Reduce infrastructure costs by up to 40%",
-  "Scale resources on-demand automatically",
-  "Improve application reliability and uptime",
-  "Accelerate deployment cycles",
-  "Enhanced disaster recovery capabilities",
-  "Global reach with edge computing"
+  "Reduce infrastructure costs by up to 40% with optimized cloud architecture and pay-as-you-go pricing",
+  "Scale resources on-demand automatically to handle traffic spikes without manual intervention",
+  "Improve application reliability to 99.99% uptime with multi-zone deployments and auto-healing",
+  "Accelerate deployment cycles from weeks to hours with CI/CD pipelines and infrastructure as code",
+  "Enhanced disaster recovery with automated backups, multi-region replication, and RTO under 1 hour",
+  "Global reach with edge computing and CDN integration for sub-50ms response times worldwide",
+  "Increase development velocity by 3x with managed services and serverless computing",
+  "Improve security posture with cloud-native security tools, compliance certifications, and encryption",
+  "Enable innovation with access to cutting-edge services like AI/ML, IoT, and big data analytics",
+  "Reduce time-to-market for new features from months to weeks with cloud agility"
 ];
 
 export default function CloudServices() {

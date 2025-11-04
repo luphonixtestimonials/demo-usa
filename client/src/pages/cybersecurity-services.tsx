@@ -4,21 +4,25 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 const features = [
-  "Security audits and penetration testing",
-  "Threat detection and response",
-  "Security Operations Center (SOC)",
-  "Compliance and regulatory support",
-  "Identity and access management",
-  "Security awareness training"
+  "Security audits and penetration testing - Comprehensive vulnerability assessments, ethical hacking, and security audits following OWASP, NIST, and industry best practices to identify and remediate vulnerabilities before attackers exploit them",
+  "Threat detection and response - 24/7 monitoring with SIEM, EDR, and advanced threat intelligence to detect, analyze, and respond to security incidents in real-time with mean time to response under 15 minutes",
+  "Security Operations Center (SOC) - Dedicated team of security analysts monitoring your infrastructure 24/7/365, correlating events, investigating threats, and coordinating incident response",
+  "Compliance and regulatory support - Achieve and maintain SOC 2, ISO 27001, PCI DSS, HIPAA, and other certifications with gap assessments, remediation planning, and continuous compliance monitoring",
+  "Identity and access management (IAM) - Implement zero-trust security with MFA, SSO, role-based access control, privileged access management, and identity governance to prevent unauthorized access",
+  "Security awareness training - Reduce human error by 70% with engaging security training, phishing simulations, and continuous education programs that build a security-conscious culture"
 ];
 
 const benefits = [
-  "Reduce security incidents by 80%",
-  "Achieve compliance certification",
-  "24/7 threat monitoring and response",
-  "Protect sensitive data and IP",
-  "Minimize downtime from attacks",
-  "Build customer trust and confidence"
+  "Reduce security incidents by 80% with proactive monitoring and threat prevention",
+  "Achieve compliance certification (SOC 2, ISO 27001) and avoid regulatory fines",
+  "24/7 threat monitoring and response with average detection time under 5 minutes",
+  "Protect sensitive data and intellectual property with encryption and access controls",
+  "Minimize downtime from attacks with incident response plans and disaster recovery",
+  "Build customer trust and confidence with visible security certifications and practices",
+  "Prevent data breaches averaging $4.45M per incident with comprehensive security controls",
+  "Reduce cyber insurance premiums by 20-30% with demonstrable security posture",
+  "Protect brand reputation and avoid headline-making security incidents",
+  "Enable secure digital transformation and cloud adoption with confidence"
 ];
 
 export default function CybersecurityServices() {

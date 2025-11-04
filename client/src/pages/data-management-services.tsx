@@ -4,21 +4,25 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 const features = [
-  "Data architecture and modeling",
-  "Master data management (MDM)",
-  "Data quality and cleansing",
-  "Data governance frameworks",
-  "GDPR and compliance management",
-  "Data warehouse design"
+  "Data architecture and modeling - Design scalable data architectures with logical and physical data models, normalization strategies, and optimal database schema for performance and maintainability",
+  "Master data management (MDM) - Create single sources of truth for critical business entities (customers, products, locations) with data synchronization, deduplication, and golden record creation",
+  "Data quality and cleansing - Implement automated data validation, standardization, and enrichment processes that improve data accuracy from 60% to 95%+ with continuous monitoring",
+  "Data governance frameworks - Establish policies, procedures, and controls for data ownership, stewardship, lifecycle management, and access controls across the enterprise",
+  "GDPR and compliance management - Ensure regulatory compliance with data privacy laws (GDPR, CCPA, HIPAA) through data classification, consent management, and automated audit trails",
+  "Data warehouse and lake design - Build modern data platforms combining structured warehouses and unstructured data lakes with ETL/ELT pipelines, data cataloging, and analytics capabilities"
 ];
 
 const benefits = [
-  "Improve data accuracy by 95%",
-  "Reduce data redundancy and storage costs",
-  "Enable faster data-driven decisions",
-  "Ensure regulatory compliance",
-  "Enhance data security and privacy",
-  "Create single source of truth"
+  "Improve data accuracy from 60% to 95%+ with automated validation and quality monitoring",
+  "Reduce data redundancy and storage costs by 40% through deduplication and efficient architecture",
+  "Enable faster data-driven decisions with centralized, trusted data accessible in real-time",
+  "Ensure regulatory compliance and avoid fines up to 4% of revenue with proactive governance",
+  "Enhance data security and privacy with encryption, access controls, and audit logging",
+  "Create single source of truth eliminating conflicting reports and enabling enterprise-wide analytics",
+  "Reduce time spent searching for data by 60% with comprehensive data catalogs and metadata",
+  "Improve customer experience with 360-degree views and accurate, up-to-date information",
+  "Increase operational efficiency by 35% with automated data workflows and self-service access",
+  "Enable advanced analytics and AI initiatives with clean, well-organized, governed data"
 ];
 
 export default function DataManagementServices() {

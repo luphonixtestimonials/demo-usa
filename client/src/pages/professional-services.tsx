@@ -4,21 +4,25 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 const features = [
-  "Technology strategy and planning",
-  "Program and project management",
-  "Organizational change management",
-  "Business process optimization",
-  "Vendor selection and management",
-  "Digital transformation consulting"
+  "Technology strategy and planning - Develop comprehensive IT roadmaps aligned with business objectives, including technology assessments, architecture planning, investment prioritization, and multi-year transformation strategies",
+  "Program and project management - Expert PMO leadership using Agile, Scrum, and traditional methodologies to deliver complex initiatives on-time and on-budget with full risk management and stakeholder coordination",
+  "Organizational change management - Drive successful adoption of new technologies and processes with structured change management, training programs, communication strategies, and resistance management",
+  "Business process optimization - Analyze and redesign workflows using Lean Six Sigma and process mining to eliminate waste, reduce cycle times by 40%, and improve quality",
+  "Vendor selection and management - Navigate complex RFP processes, evaluate vendors objectively, negotiate favorable contracts, and manage vendor performance throughout engagement lifecycle",
+  "Digital transformation consulting - Guide end-to-end transformation journeys from strategy through execution, leveraging cloud, AI, automation, and modern practices to achieve business outcomes"
 ];
 
 const benefits = [
-  "Accelerate project delivery by 40%",
-  "Reduce project risks and overruns",
-  "Ensure stakeholder alignment",
-  "Maximize ROI on technology investments",
-  "Build internal capabilities",
-  "Drive successful adoption"
+  "Accelerate project delivery by 40% with experienced program management and proven methodologies",
+  "Reduce project risks and cost overruns by 60% with proactive risk management and governance",
+  "Ensure stakeholder alignment across business units with effective communication and collaboration",
+  "Maximize ROI on technology investments with strategic planning and value-focused execution",
+  "Build internal capabilities through knowledge transfer, training, and embedded consulting approaches",
+  "Drive successful adoption with change management achieving 85%+ user adoption rates",
+  "Avoid costly mistakes with expert guidance and industry best practices",
+  "Access specialized skills without long-term hiring commitments",
+  "Accelerate time-to-value from 18 months to 6-9 months for major initiatives",
+  "Maintain business continuity during transformations with minimal disruption"
 ];
 
 export default function ProfessionalServices() {

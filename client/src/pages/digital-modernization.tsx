@@ -4,21 +4,25 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 const features = [
-  "Legacy system assessment and planning",
-  "Microservices architecture design",
-  "API-first development approach",
-  "Cloud-native application migration",
-  "Mobile-first responsive design",
-  "Progressive web applications (PWA)"
+  "Legacy system assessment and planning - Comprehensive analysis of existing systems, technical debt evaluation, dependency mapping, and detailed modernization roadmap with risk mitigation strategies",
+  "Microservices architecture design - Transform monolithic applications into scalable microservices with proper domain boundaries, service mesh implementation, and event-driven architecture patterns",
+  "API-first development approach - Design RESTful and GraphQL APIs with OpenAPI specifications, versioning strategies, rate limiting, and comprehensive documentation for seamless integration",
+  "Cloud-native application migration - Refactor legacy applications for cloud platforms using 12-factor app principles, containerization, and cloud-native services for optimal performance",
+  "Mobile-first responsive design - Create adaptive interfaces that work seamlessly across devices with progressive enhancement, accessibility compliance, and optimal mobile user experiences",
+  "Progressive web applications (PWA) - Build fast, reliable, and engaging web apps with offline capabilities, push notifications, and app-like experiences that work on any platform"
 ];
 
 const benefits = [
-  "Reduce technical debt by 60%",
-  "Improve system performance by 3x",
-  "Enhance user experience and satisfaction",
-  "Lower maintenance costs significantly",
-  "Enable faster feature deployment",
-  "Future-proof your technology stack"
+  "Reduce technical debt by 60% through systematic refactoring and modern architecture patterns",
+  "Improve system performance by 3x with optimized code, caching strategies, and modern frameworks",
+  "Enhance user experience and satisfaction with intuitive interfaces and sub-second response times",
+  "Lower maintenance costs by 40-50% with cleaner code, automated testing, and reduced complexity",
+  "Enable faster feature deployment with continuous delivery and modular architecture",
+  "Future-proof your technology stack with modern languages, frameworks, and cloud-native services",
+  "Increase developer productivity by 50% with modern tools and streamlined development workflows",
+  "Improve system scalability to handle 10x traffic growth without architecture changes",
+  "Reduce security vulnerabilities by 70% with modern security practices and automated scanning",
+  "Accelerate innovation with ability to adopt new technologies and integrate third-party services"
 ];
 
 export default function DigitalModernization() {

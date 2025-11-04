@@ -13,50 +13,62 @@ export default function AIAnalyticsService() {
     {
       icon: Brain,
       title: "Machine Learning Implementation",
-      description: "Custom ML models tailored to your business needs, from predictive analytics to natural language processing."
+      description: "Custom ML models tailored to your business needs, from predictive analytics to natural language processing. We develop supervised, unsupervised, and reinforcement learning solutions that adapt to your specific use cases, including classification, regression, clustering, and recommendation systems."
     },
     {
       icon: TrendingUp,
       title: "Predictive Analytics",
-      description: "Forecast trends, identify patterns, and make data-driven decisions with advanced predictive modeling."
+      description: "Forecast trends, identify patterns, and make data-driven decisions with advanced predictive modeling. Our solutions leverage time series analysis, forecasting algorithms, and statistical models to predict customer behavior, market trends, demand patterns, and business outcomes with high accuracy."
     },
     {
       icon: Database,
       title: "Business Intelligence Dashboards",
-      description: "Interactive dashboards that transform raw data into actionable insights for stakeholders at all levels."
+      description: "Interactive dashboards that transform raw data into actionable insights for stakeholders at all levels. We create intuitive, real-time visualizations using Power BI, Tableau, and custom solutions that consolidate data from multiple sources, enabling executive decision-making and operational monitoring."
     },
     {
       icon: Zap,
       title: "Process Automation",
-      description: "Automate repetitive tasks and workflows using AI-powered solutions to increase efficiency."
+      description: "Automate repetitive tasks and workflows using AI-powered solutions to increase efficiency. Our intelligent automation combines RPA (Robotic Process Automation) with AI/ML to handle document processing, data entry, customer service, and complex decision-making processes with minimal human intervention."
     }
   ];
 
   const benefits = [
-    "Reduce operational costs by up to 40%",
-    "Improve decision-making accuracy",
-    "Gain competitive advantage through data insights",
-    "Accelerate time-to-market for new initiatives",
-    "Scale operations without proportional cost increases",
-    "Enhance customer experience with personalization"
+    "Reduce operational costs by up to 40% through intelligent automation and optimization",
+    "Improve decision-making accuracy with data-driven insights and predictive models",
+    "Gain competitive advantage through advanced analytics and market intelligence",
+    "Accelerate time-to-market for new initiatives with rapid prototyping and testing",
+    "Scale operations without proportional cost increases using AI-powered solutions",
+    "Enhance customer experience with personalization and intelligent recommendations",
+    "Identify new revenue opportunities through pattern recognition and trend analysis",
+    "Mitigate risks with early warning systems and anomaly detection",
+    "Optimize resource allocation and workforce planning with predictive analytics",
+    "Achieve ROI within 6-12 months with measurable business impact"
   ];
 
   const useCases = [
     {
       title: "Customer Behavior Analysis",
-      description: "Understand customer patterns and preferences to optimize marketing strategies and improve retention rates."
+      description: "Understand customer patterns and preferences to optimize marketing strategies and improve retention rates. Our advanced analytics solutions track customer journeys, segment audiences, predict churn, and provide personalized recommendations that increase engagement and lifetime value by up to 35%."
     },
     {
-      title: "Fraud Detection",
-      description: "Identify anomalies and suspicious activities in real-time to protect your business and customers."
+      title: "Fraud Detection & Prevention",
+      description: "Identify anomalies and suspicious activities in real-time to protect your business and customers. Using advanced machine learning algorithms, we detect fraudulent transactions, account takeovers, and security threats with 99%+ accuracy while minimizing false positives, saving millions in potential losses."
     },
     {
       title: "Supply Chain Optimization",
-      description: "Predict demand, optimize inventory, and streamline logistics with AI-powered forecasting."
+      description: "Predict demand, optimize inventory, and streamline logistics with AI-powered forecasting. Our solutions analyze historical data, market trends, and external factors to optimize stock levels, reduce waste by 25%, improve delivery times, and ensure products are available when and where customers need them."
     },
     {
       title: "Predictive Maintenance",
-      description: "Reduce downtime and maintenance costs by predicting equipment failures before they occur."
+      description: "Reduce downtime and maintenance costs by predicting equipment failures before they occur. Our IoT-enabled AI models monitor equipment health in real-time, schedule proactive maintenance, extend asset lifespan by 20%, and reduce unplanned downtime by up to 50%, ensuring continuous operations."
+    },
+    {
+      title: "Sentiment Analysis & Social Listening",
+      description: "Monitor brand reputation and customer sentiment across social media, reviews, and feedback channels. Our NLP-powered solutions analyze thousands of conversations in real-time, identify trending topics, detect crises early, and provide actionable insights to improve products and customer service."
+    },
+    {
+      title: "Revenue Forecasting & Pricing Optimization",
+      description: "Maximize revenue with dynamic pricing strategies and accurate sales forecasting. Our AI models analyze market conditions, competitor pricing, demand patterns, and customer willingness to pay to recommend optimal pricing that increases margins by 10-15% while maintaining customer satisfaction."
     }
   ];
 

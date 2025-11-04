@@ -23,13 +23,19 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offsetTop = element.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
+    // Check if we're on the home page
+    if (window.location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offsetTop = element.offsetTop - 80;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // Navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
     }
     setIsMenuOpen(false);
   };

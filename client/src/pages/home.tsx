@@ -6,6 +6,23 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   useEffect(() => {
+    // Handle hash navigation on page load
+    if (window.location.hash) {
+      const sectionId = window.location.hash.substring(1);
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offsetTop = element.offsetTop - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+  }, []);
+
+  useEffect(() => {
     // Intersection Observer for fade-in animations
     const observerOptions = {
       threshold: 0.1,

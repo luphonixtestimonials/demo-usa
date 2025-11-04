@@ -58,7 +58,7 @@ export default function Navigation() {
               </div>
             </div>
           </Link>
-          
+
           {/* Professional Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
             <button 
@@ -69,7 +69,7 @@ export default function Navigation() {
               Home
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </button>
-            
+
             {/* Services Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -91,15 +91,43 @@ export default function Navigation() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/enterprise-management-service">
+                  <Link href="/cloud-services">
                     <span className="block w-full px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded cursor-pointer">
-                      Enterprise Management Services
+                      Cloud Services
+                    </span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/digital-modernization">
+                    <span className="block w-full px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded cursor-pointer">
+                      Digital Modernization
+                    </span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/data-management-services">
+                    <span className="block w-full px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded cursor-pointer">
+                      Data Management Services
+                    </span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/cybersecurity-services">
+                    <span className="block w-full px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded cursor-pointer">
+                      Cybersecurity Services
+                    </span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/professional-services">
+                    <span className="block w-full px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded cursor-pointer">
+                      Professional Services
                     </span>
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            
+
             <button 
               onClick={() => scrollToSection('about')} 
               className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
@@ -116,7 +144,7 @@ export default function Navigation() {
               Contact
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </button>
-            
+
             {/* CTA Button */}
             <div className="ml-6 pl-6 border-l border-slate-200">
               <button 
@@ -128,7 +156,7 @@ export default function Navigation() {
               </button>
             </div>
           </div>
-          
+
           {/* Enhanced Mobile menu button */}
           <div className="md:hidden">
             <button 
@@ -143,7 +171,7 @@ export default function Navigation() {
             </button>
           </div>
         </div>
-        
+
         {/* Enhanced Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-[#dfeef1]/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
@@ -155,7 +183,7 @@ export default function Navigation() {
               >
                 Home
               </button>
-              
+
               {/* Mobile Services Dropdown */}
               <div className="space-y-1">
                 <Link href="/ai-analytics-service">
@@ -166,16 +194,48 @@ export default function Navigation() {
                     AI & Analytics Services
                   </span>
                 </Link>
-                <Link href="/enterprise-management-service">
+                <Link href="/cloud-services">
                   <span 
                     onClick={() => setIsMenuOpen(false)}
                     className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
                   >
-                    Enterprise Management Services
+                    Cloud Services
+                  </span>
+                </Link>
+                <Link href="/digital-modernization">
+                  <span 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
+                  >
+                    Digital Modernization
+                  </span>
+                </Link>
+                <Link href="/data-management-services">
+                  <span 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
+                  >
+                    Data Management Services
+                  </span>
+                </Link>
+                <Link href="/cybersecurity-services">
+                  <span 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
+                  >
+                    Cybersecurity Services
+                  </span>
+                </Link>
+                <Link href="/professional-services">
+                  <span 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200 cursor-pointer"
+                  >
+                    Professional Services
                   </span>
                 </Link>
               </div>
-              
+
               <button 
                 onClick={() => scrollToSection('about')} 
                 className="block w-full text-left px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-lg font-medium transition-all duration-200"
@@ -190,7 +250,7 @@ export default function Navigation() {
               >
                 Contact
               </button>
-              
+
               <div className="pt-4 border-t border-slate-200">
                 <button 
                   className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"

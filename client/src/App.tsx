@@ -7,12 +7,22 @@ import { queryClient } from "./lib/queryClient";
 import Home from "./pages/home";
 import AIAnalyticsService from "./pages/ai-analytics-service";
 import EnterpriseManagementService from "@/pages/enterprise-management-service";
+import CloudServices from "./pages/cloud-services";
+import DigitalModernization from "./pages/digital-modernization";
+import DataManagementServices from "./pages/data-management-services";
+import CybersecurityServices from "./pages/cybersecurity-services";
+import ProfessionalServices from "./pages/professional-services";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/ai-analytics-service" component={AIAnalyticsService} />
+      <Route path="/cloud-services" component={CloudServices} />
+      <Route path="/digital-modernization" component={DigitalModernization} />
+      <Route path="/data-management-services" component={DataManagementServices} />
+      <Route path="/cybersecurity-services" component={CybersecurityServices} />
+      <Route path="/professional-services" component={ProfessionalServices} />
       <Route path="/enterprise-management-service" component={EnterpriseManagementService} />
       <Route path="*" component={NotFound} />
     </Switch>

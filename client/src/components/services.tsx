@@ -19,9 +19,10 @@ import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 const services = [
   {
     id: 1,
-    title: "AI and Analytics Services",
+    title: "AI & Analytics Services",
     description: "Harness the power of artificial intelligence and data analytics to unlock insights and automate processes.",
     icon: Lightbulb,
+    link: "/ai-analytics-service",
     features: [
       "Machine Learning Implementation",
       "Predictive Analytics",
@@ -30,20 +31,10 @@ const services = [
   },
   {
     id: 2,
-    title: "Cybersecurity Services",
-    description: "Protect your digital assets with comprehensive security solutions and threat management.",
-    icon: Shield,
-    features: [
-      "Security Audits & Assessments",
-      "Incident Response Planning",
-      "Compliance Management"
-    ]
-  },
-  {
-    id: 3,
-    title: "Infrastructure and Cloud Services",
+    title: "Cloud Services",
     description: "Scale your operations with robust cloud infrastructure and modern deployment strategies.",
     icon: Cloud,
+    link: "/cloud-services",
     features: [
       "Cloud Migration & Strategy",
       "DevOps Implementation",
@@ -51,10 +42,11 @@ const services = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     title: "Digital Modernization",
     description: "Transform legacy systems into modern, efficient digital platforms that drive business growth.",
     icon: Zap,
+    link: "/digital-modernization",
     features: [
       "Legacy System Migration",
       "API Development & Integration",
@@ -62,10 +54,11 @@ const services = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: "Data Management Services",
     description: "Organize, secure, and leverage your data assets for strategic business advantages.",
     icon: Database,
+    link: "/data-management-services",
     features: [
       "Data Architecture Design",
       "Database Optimization",
@@ -73,80 +66,27 @@ const services = [
     ]
   },
   {
+    id: 5,
+    title: "Cybersecurity Services",
+    description: "Protect your digital assets with comprehensive security solutions and threat management.",
+    icon: Shield,
+    link: "/cybersecurity-services",
+    features: [
+      "Security Audits & Assessments",
+      "Incident Response Planning",
+      "Compliance Management"
+    ]
+  },
+  {
     id: 6,
-    title: "Customer Experience",
-    description: "Enhance customer satisfaction with personalized experiences and seamless digital touchpoints.",
-    icon: Users,
-    features: [
-      "CX Strategy Development",
-      "Omnichannel Implementation",
-      "Customer Journey Mapping"
-    ]
-  },
-  {
-    id: 7,
-    title: "Contact Center Solutions",
-    description: "Modern contact center technologies that improve agent productivity and customer satisfaction.",
-    icon: Phone,
-    features: [
-      "Cloud Contact Centers",
-      "AI-Powered Routing",
-      "Performance Analytics"
-    ]
-  },
-  {
-    id: 8,
-    title: "Managed Helpdesk Services",
-    description: "24/7 technical support and IT helpdesk services to keep your business running smoothly.",
-    icon: LifeBuoy,
-    features: [
-      "Multi-tier Support Structure",
-      "Ticket Management Systems",
-      "SLA-driven Response Times"
-    ]
-  },
-  {
-    id: 9,
-    title: "Consulting and Advisory Services",
-    description: "Strategic technology consulting to align your IT initiatives with business objectives.",
-    icon: BarChart3,
+    title: "Professional Services",
+    description: "Expert consulting and program management to ensure successful delivery of technology initiatives.",
+    icon: Settings,
+    link: "/professional-services",
     features: [
       "Technology Strategy Planning",
-      "Digital Transformation Roadmaps",
-      "Vendor Selection & Management"
-    ]
-  },
-  {
-    id: 10,
-    title: "Case Management",
-    description: "Streamline workflows with intelligent case management systems that improve efficiency.",
-    icon: Clipboard,
-    features: [
-      "Workflow Automation",
-      "Case Tracking & Analytics",
-      "Integration Capabilities"
-    ]
-  },
-  {
-    id: 11,
-    title: "Program Management",
-    description: "Expert program management services to ensure successful delivery of complex technology initiatives.",
-    icon: Settings,
-    features: [
-      "Agile & Waterfall Methodologies",
-      "Resource Allocation & Planning",
-      "Risk Management & Mitigation"
-    ]
-  },
-  {
-    id: 12,
-    title: "Organizational Change Management",
-    description: "Navigate technology transitions smoothly with comprehensive change management strategies.",
-    icon: UserCheck,
-    features: [
-      "Change Strategy Development",
-      "Training & Communication Plans",
-      "Adoption Measurement & Support"
+      "Program & Project Management",
+      "Organizational Change Management"
     ]
   }
 ];
@@ -251,7 +191,7 @@ export default function Services() {
                     <CardItem translateZ="80" className="mt-6 pt-6 border-t border-slate-600 group-hover/card:border-slate-500">
                       <div className="flex items-center justify-between">
                         <a 
-                          href={`/services/${service.id}`}
+                          href={service.link}
                           className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm group-hover/card:translate-x-1 transition-all duration-300"
                         >
                           Learn more

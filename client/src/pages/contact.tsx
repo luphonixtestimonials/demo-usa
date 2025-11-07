@@ -356,7 +356,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold text-[hsl(220,91%,15%)] mb-2">North America</h3>
               <p className="text-slate-700">
                 San Francisco, CA<br />
-                New York, NY<br />
+                Virginia<br />
                 Toronto, Canada
               </p>
             </div>

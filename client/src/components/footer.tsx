@@ -161,7 +161,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-slate-300">info@6vc.com</p>
+                  <p className="text-slate-300">Info@6VCconsulting.com</p>
                   <p className="text-slate-500 text-sm">Get in touch</p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-slate-300">New York, NY</p>
+                  <p className="text-slate-300">Virginia</p>
                   <p className="text-slate-500 text-sm">Headquarters</p>
                 </div>
               </div>

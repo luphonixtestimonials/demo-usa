@@ -88,8 +88,8 @@ export default function Hero() {
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">ISO 27001</div>
-                  <div className="text-xs">Certified Security</div>
+                  <div className="text-sm font-semibold text-[#dfeef1]">100+ Projects</div>
+                  <div className="text-xs">Successfully Delivered</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-[#dfeef1]/70">
@@ -97,8 +97,8 @@ export default function Hero() {
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">Fortune 100</div>
-                  <div className="text-xs">Trusted Partner</div>
+                  <div className="text-sm font-semibold text-[#dfeef1]">20+ Years</div>
+                  <div className="text-xs">Industry Expertise</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-[#dfeef1]/70">
@@ -106,8 +106,8 @@ export default function Hero() {
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">24/7</div>
-                  <div className="text-xs">Global Support</div>
+                  <div className="text-sm font-semibold text-[#dfeef1]">98%</div>
+                  <div className="text-xs">Client Satisfaction</div>
                 </div>
               </div>
             </div>
@@ -172,8 +172,8 @@ export default function Hero() {
                             <div className="text-xs text-slate-600">Uptime</div>
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-purple-600">24/7</div>
-                            <div className="text-xs text-slate-600">Support</div>
+                            <div className="text-lg font-bold text-purple-600">20+</div>
+                            <div className="text-xs text-slate-600">Years</div>
                           </div>
                         </div>
                       </div>
@@ -189,7 +189,7 @@ export default function Hero() {
               {/* Floating Badge */}
               <div className="absolute -top-4 -right-4 bg-[#dfeef1]/90 backdrop-blur-xl rounded-2xl p-4 border border-[#dfeef1]/20 shadow-xl transform rotate-3">
                 <div className="text-xs text-slate-600">Trusted by</div>
-                <div className="text-lg font-bold text-slate-800">Fortune 100</div>
+                <div className="text-lg font-bold text-slate-800">200+ Clients</div>
               </div>
             </div>
           </div>

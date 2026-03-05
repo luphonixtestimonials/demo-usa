@@ -27,7 +27,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-xl text-[#dfeef1]/80 max-w-4xl mx-auto leading-relaxed" data-testid="about-hero-description">
-              For over 15 years, we've been at the forefront of enterprise technology solutions, helping Fortune 100 companies transform their vision into reality.
+              For over 15 years, we've been at the forefront of enterprise technology solutions, helping enterprises across industries transform their vision into reality.
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function About() {
                   Our journey has been defined by our unwavering commitment to excellence, innovation, and client success. From early cloud migration projects to today's AI-powered solutions, we've consistently stayed ahead of the technology curve, ensuring our clients gain a competitive advantage in their industries.
                 </p>
                 <p data-testid="story-paragraph-3">
-                  Today, we're proud to serve Fortune 100 companies across multiple sectors, delivering solutions that drive measurable growth, enhance security, and unlock new possibilities through technology.
+                  Today, we're proud to serve 200+ enterprise clients across multiple sectors, delivering solutions that drive measurable growth, enhance security, and unlock new possibilities through technology.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-4">Proven Expertise</h3>
               <p className="text-slate-600 leading-relaxed">
-                10+ years of experience delivering complex enterprise solutions across industries with certified professionals.
+                20+ years of experience delivering complex enterprise solutions across industries with certified professionals.
               </p>
             </div>
 
@@ -154,7 +154,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-4">Global Reach</h3>
               <p className="text-slate-600 leading-relaxed">
-                24/7 support with teams across multiple time zones, ensuring seamless service delivery worldwide.
+                Dedicated support with teams across multiple time zones, ensuring seamless service delivery worldwide.
               </p>
             </div>
 
@@ -164,7 +164,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-4">Security Focus</h3>
               <p className="text-slate-600 leading-relaxed">
-                ISO 27001 certified with enterprise-grade security standards built into every solution we deliver.
+                Enterprise-grade cybersecurity solutions with comprehensive security standards built into every solution we deliver.
               </p>
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function About() {
               <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Emily Patel</h3>
               <p className="text-orange-600 font-medium mb-3">VP of Cybersecurity</p>
               <p className="text-slate-600 leading-relaxed">
-                Certified security expert with 10+ years protecting enterprise infrastructure and leading compliance initiatives.
+                Certified security expert with 20+ years protecting enterprise infrastructure and leading compliance initiatives.
               </p>
             </div>
           </div>

@@ -97,7 +97,7 @@ export default function Hero() {
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">20+ Years</div>
+                  <div className="text-sm font-semibold text-[#dfeef1]">25+ Years</div>
                   <div className="text-xs">Industry Expertise</div>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function Hero() {
                             <div className="text-xs text-slate-600">Uptime</div>
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-purple-600">20+</div>
+                            <div className="text-lg font-bold text-purple-600">25+</div>
                             <div className="text-xs text-slate-600">Years</div>
                           </div>
                         </div>

@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import logo from '/assets/logo.png';  // Updated import path
 
 export default function Footer() {
@@ -44,22 +44,6 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 group-hover:text-[#dfeef1]" />
-              </button>
-              <button
-                onClick={() => handleSocialClick('Twitter')}
-                className="w-12 h-12 bg-slate-800 hover:bg-blue-400 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
-                data-testid="social-twitter"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5 group-hover:text-[#dfeef1]" />
-              </button>
-              <button
-                onClick={() => handleSocialClick('GitHub')}
-                className="w-12 h-12 bg-slate-800 hover:bg-gray-700 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group"
-                data-testid="social-github"
-                aria-label="GitHub"
-              >
-                <Github className="w-5 h-5 group-hover:text-[#dfeef1]" />
               </button>
             </div>
           </div>

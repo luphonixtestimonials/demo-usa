@@ -134,7 +134,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-4">Proven Expertise</h3>
               <p className="text-slate-600 leading-relaxed">
-                20+ years of experience delivering complex enterprise solutions across industries with certified professionals.
+                25+ years of experience delivering complex enterprise solutions across industries with certified professionals.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function About() {
               <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Sarah Chen</h3>
               <p className="text-blue-600 font-medium mb-3">CEO & Co-Founder</p>
               <p className="text-slate-600 leading-relaxed">
-                Former VP of Technology at Fortune 500 companies with 20+ years in enterprise solutions and digital transformation.
+                Former VP of Technology at Fortune 500 companies with 25+ years in enterprise solutions and digital transformation.
               </p>
             </div>
 
@@ -217,7 +217,7 @@ export default function About() {
               <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Emily Patel</h3>
               <p className="text-orange-600 font-medium mb-3">VP of Cybersecurity</p>
               <p className="text-slate-600 leading-relaxed">
-                Certified security expert with 20+ years protecting enterprise infrastructure and leading compliance initiatives.
+                Certified security expert with 25+ years protecting enterprise infrastructure and leading compliance initiatives.
               </p>
             </div>
           </div>

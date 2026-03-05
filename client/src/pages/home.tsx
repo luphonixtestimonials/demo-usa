@@ -91,7 +91,7 @@ export default function Home() {
             <div className="text-center fade-in group" data-testid="stat-experience">
               <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105 h-full flex flex-col justify-center">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-[#dfeef1]">20+</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">25+</span>
                 </div>
                 <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Years</h3>
                 <p className="text-[#dfeef1]/70 font-inter">of industry expertise and innovation leadership</p>
@@ -123,7 +123,7 @@ export default function Home() {
                   <span className="text-2xl font-bold text-[#dfeef1]">50+</span>
                 </div>
                 <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Technologies</h3>
-                <p className="text-[#dfeef1]/70 font-inter">cutting-edge tools and platforms for modern solutions</p>
+<p className="text-[#dfeef1]/70 font-inter">powering AI, cloud, security, and digital transformation</p>
                 <div className="flex justify-center mt-4">
                   <div className="flex items-center space-x-1">
                     {[...Array(5)].map((_, i) => (

@@ -164,8 +164,8 @@ export default function Home() {
               <p className="text-[#dfeef1]/70">End-to-End IT Solutions</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#dfeef1] mb-2">99.9%</div>
-              <p className="text-[#dfeef1]/70">System Uptime Guarantee</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">150+</div>
+              <p className="text-[#dfeef1]/70">Expert Team Members</p>
             </div>
           </div>
         </div>

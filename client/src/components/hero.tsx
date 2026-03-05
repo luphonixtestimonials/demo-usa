@@ -168,8 +168,8 @@ export default function Hero() {
                             <div className="text-xs text-slate-600">Projects</div>
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-teal-600">99.9%</div>
-                            <div className="text-xs text-slate-600">Uptime</div>
+                            <div className="text-lg font-bold text-teal-600">200+</div>
+                            <div className="text-xs text-slate-600">Clients</div>
                           </div>
                           <div>
                             <div className="text-lg font-bold text-purple-600">25+</div>

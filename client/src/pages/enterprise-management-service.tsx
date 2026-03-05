@@ -153,8 +153,8 @@ export default function EnterpriseManagementService() {
               </div>
               
               <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 border-2 border-teal-100 hidden lg:block">
-                <div className="text-3xl font-bold text-teal-600 mb-1">99.9%</div>
-                <div className="text-xs text-slate-600">System Uptime</div>
+                <div className="text-3xl font-bold text-teal-600 mb-1">50+</div>
+                <div className="text-xs text-slate-600">Technologies</div>
               </div>
             </div>
           </div>

@@ -106,7 +106,7 @@ export default function Home() {
             <div className="text-center fade-in group" data-testid="stat-projects">
               <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105 h-full flex flex-col justify-center">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-500 to-green-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-[#dfeef1]">100+</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">70+</span>
                 </div>
                 <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Projects</h3>
                 <p className="text-[#dfeef1]/70 font-inter">successfully delivered across global markets</p>
@@ -156,7 +156,7 @@ export default function Home() {
           {/* Additional Trust Indicators */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 fade-in">
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#dfeef1] mb-2">200+</div>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">100+</div>
               <p className="text-[#dfeef1]/70">Enterprise Clients Served</p>
             </div>
             <div className="text-center">
@@ -164,7 +164,7 @@ export default function Home() {
               <p className="text-[#dfeef1]/70">End-to-End IT Solutions</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#dfeef1] mb-2">150+</div>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">30+</div>
               <p className="text-[#dfeef1]/70">Expert Team Members</p>
             </div>
           </div>

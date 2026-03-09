@@ -118,8 +118,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-[hsl(220,91%,15%)] mb-1">Email Us</h3>
-                    <a href="mailto:contact@6vcconsulting.com" className="text-blue-600 hover:text-blue-700 transition-colors">
-                      contact@6vcconsulting.com
+                    <a href="mailto:Info@6VCconsulting.com" className="text-blue-600 hover:text-blue-700 transition-colors">
+                      Info@6VCconsulting.com
                     </a>
                     <p className="text-sm text-slate-600 mt-1">We'll respond within 24 hours</p>
                   </div>
@@ -145,9 +145,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-bold text-[hsl(220,91%,15%)] mb-1">Visit Us</h3>
                     <p className="text-slate-700">
-                      123 Innovation Drive, Suite 500<br />
-                      San Francisco, CA 94105<br />
-                      United States
+                      Virginia<br />
+                      <br />
+                      
                     </p>
                   </div>
                 </div>

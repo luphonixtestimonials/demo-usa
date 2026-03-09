@@ -382,7 +382,9 @@ export default function AIAnalyticsService() {
                 "https://images.unsplash.com/photo-1556155092-490a1ba16284?w=600&h=400&fit=crop",
                 "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=400&fit=crop",
                 "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
-                "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
+                "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
               ];
               
               return (

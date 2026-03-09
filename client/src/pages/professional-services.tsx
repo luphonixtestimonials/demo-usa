@@ -223,9 +223,12 @@ export default function ProfessionalServices() {
           <p className="text-xl text-blue-100 mb-8">
             Partner with our experts to deliver exceptional technology outcomes
           </p>
-          <button className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <a 
+            href="/#contact"
+            className="inline-block px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
             Schedule Strategy Session
-          </button>
+          </a>
         </div>
       </section>
 

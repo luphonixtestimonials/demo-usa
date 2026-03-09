@@ -229,9 +229,12 @@ export default function CloudServices() {
           <p className="text-xl text-blue-100 mb-8">
             Let our experts guide your cloud transformation journey
           </p>
-          <button className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <a 
+            href="/#contact"
+            className="inline-block px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
             Schedule a Cloud Assessment
-          </button>
+          </a>
         </div>
       </section>
 

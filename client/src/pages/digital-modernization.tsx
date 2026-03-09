@@ -223,9 +223,12 @@ export default function DigitalModernization() {
           <p className="text-xl text-blue-100 mb-8">
             Let's transform your legacy infrastructure into a modern digital platform
           </p>
-          <button className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          <a 
+            href="/#contact"
+            className="inline-block px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
             Request Modernization Roadmap
-          </button>
+          </a>
         </div>
       </section>
 

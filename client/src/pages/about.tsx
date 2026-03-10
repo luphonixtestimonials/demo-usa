@@ -171,59 +171,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-blue-600 text-sm font-medium mb-6">
-              <Users className="w-4 h-4 mr-2" />
-              Meet Our Leadership
-            </div>
-            <h2 className="text-4xl sm:text-5xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-6" data-testid="leadership-title">
-              Led by Industry Veterans
-            </h2>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
-              Our leadership team brings decades of combined experience in technology, business transformation, and strategic consulting.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div className="text-center group" data-testid="leader-sarah">
-              <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-blue-400 to-teal-400 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <span className="text-6xl font-bold text-white">SC</span>
-              </div>
-              <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Sarah Chen</h3>
-              <p className="text-blue-600 font-medium mb-3">CEO & Co-Founder</p>
-              <p className="text-slate-600 leading-relaxed">
-                Former VP of Technology at Fortune 500 companies with 25+ years in enterprise solutions and digital transformation.
-              </p>
-            </div>
-
-            <div className="text-center group" data-testid="leader-michael">
-              <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <span className="text-6xl font-bold text-white">MR</span>
-              </div>
-              <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Michael Rodriguez</h3>
-              <p className="text-purple-600 font-medium mb-3">CTO & Co-Founder</p>
-              <p className="text-slate-600 leading-relaxed">
-                AI and cloud architecture expert with extensive experience scaling technology platforms for global enterprises.
-              </p>
-            </div>
-
-            <div className="text-center group" data-testid="leader-emily">
-              <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-orange-400 to-red-400 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <span className="text-6xl font-bold text-white">EP</span>
-              </div>
-              <h3 className="text-2xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-2">Emily Patel</h3>
-              <p className="text-orange-600 font-medium mb-3">VP of Cybersecurity</p>
-              <p className="text-slate-600 leading-relaxed">
-                Certified security expert with 25+ years protecting enterprise infrastructure and leading compliance initiatives.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-[hsl(220,91%,15%)] to-[hsl(220,91%,20%)] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.2)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.2)_0%,transparent_50%)]"></div>

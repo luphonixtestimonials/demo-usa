@@ -60,9 +60,13 @@ export default function DataManagementServices() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-blue-500 text-white rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 hover:scale-105">
-                  Get Started
-                </button>
+                <a 
+                  href="/contact" 
+                  className="px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-xl font-bold text-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transform hover:scale-105 transition-all duration-300 group shadow-xl inline-flex items-center"
+                >
+                  Talk to a Data Expert
+                  <ArrowLeft className="w-5 h-5 ml-2 rotate-180 group-hover:translate-x-1 transition-transform" />
+                </a>
                 <button className="px-8 py-4 border-2 border-blue-300/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all duration-300">
                   Data Assessment
                 </button>
@@ -224,7 +228,7 @@ export default function DataManagementServices() {
             Let's build a comprehensive data management strategy for your organization
           </p>
           <a 
-            href="/#contact"
+            href="/contact"
             className="inline-block px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
             Schedule Data Assessment

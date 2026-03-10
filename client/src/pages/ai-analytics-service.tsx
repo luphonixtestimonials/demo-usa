@@ -112,6 +112,16 @@ export default function AIAnalyticsService() {
                 Harness the power of artificial intelligence and data analytics to unlock insights, automate processes, and drive intelligent decision-making across your organization.
               </p>
               
+              <div className="mb-10">
+                <a 
+                  href="/contact" 
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-xl font-bold text-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transform hover:scale-105 transition-all duration-300 group shadow-xl"
+                >
+                  Talk to an AI Expert
+                  <ArrowLeft className="w-5 h-5 ml-2 rotate-180 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+              
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
@@ -437,7 +447,7 @@ export default function AIAnalyticsService() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/#contact"
+              href="/contact"
               className="px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Get Started Today

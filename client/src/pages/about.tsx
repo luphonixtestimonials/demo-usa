@@ -49,7 +49,7 @@ export default function About() {
                   Our journey has been defined by our unwavering commitment to excellence, innovation, and client success. From early cloud migration projects to today's AI-powered solutions, we've consistently stayed ahead of the technology curve, ensuring our clients gain a competitive advantage in their industries.
                 </p>
                 <p data-testid="story-paragraph-3">
-                  Today, we're proud to serve 200+ enterprise clients across multiple sectors, delivering solutions that drive measurable growth, enhance security, and unlock new possibilities through technology.
+                  Today, we're proud to serve 100+ enterprise clients across multiple sectors, delivering solutions that drive measurable growth, enhance security, and unlock new possibilities through technology.
                 </p>
               </div>
             </div>
@@ -59,15 +59,15 @@ export default function About() {
                 <p className="text-slate-600 font-medium">Company Founded</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-projects">
-                <div className="text-4xl font-bold text-teal-600 mb-2">100+</div>
+                <div className="text-4xl font-bold text-teal-600 mb-2">70+</div>
                 <p className="text-slate-600 font-medium">Projects Delivered</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-clients">
-                <div className="text-4xl font-bold text-purple-600 mb-2">200+</div>
+                <div className="text-4xl font-bold text-purple-600 mb-2">100+</div>
                 <p className="text-slate-600 font-medium">Enterprise Clients</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-team">
-                <div className="text-4xl font-bold text-orange-600 mb-2">150+</div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">30+</div>
                 <p className="text-slate-600 font-medium">Expert Team Members</p>
               </div>
             </div>

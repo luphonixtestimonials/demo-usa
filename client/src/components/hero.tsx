@@ -88,7 +88,7 @@ export default function Hero() {
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">100+ Projects</div>
+                  <div className="text-sm font-semibold text-[#dfeef1]">70+ Projects</div>
                   <div className="text-xs">Successfully Delivered</div>
                 </div>
               </div>
@@ -164,16 +164,16 @@ export default function Hero() {
 
                         <div className="grid grid-cols-3 gap-4 text-center">
                           <div>
-                            <div className="text-lg font-bold text-blue-600">100+</div>
+                            <div className="text-lg font-bold text-blue-600">70+</div>
                             <div className="text-xs text-slate-600">Projects</div>
                           </div>
                           <div>
-                            <div className="text-lg font-bold text-teal-600">200+</div>
+                            <div className="text-lg font-bold text-teal-600">100+</div>
                             <div className="text-xs text-slate-600">Clients</div>
                           </div>
                           <div>
                             <div className="text-lg font-bold text-purple-600">25+</div>
-                            <div className="text-xs text-slate-600">Years</div>
+                            <div className="text-xs text-slate-600">Years experience</div>
                           </div>
                         </div>
                       </div>
@@ -189,7 +189,7 @@ export default function Hero() {
               {/* Floating Badge */}
               <div className="absolute -top-4 -right-4 bg-[#dfeef1]/90 backdrop-blur-xl rounded-2xl p-4 border border-[#dfeef1]/20 shadow-xl transform rotate-3">
                 <div className="text-xs text-slate-600">Trusted by</div>
-                <div className="text-lg font-bold text-slate-800">200+ Clients</div>
+                <div className="text-lg font-bold text-slate-800">100+ Clients</div>
               </div>
             </div>
           </div>

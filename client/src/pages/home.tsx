@@ -3,6 +3,8 @@ import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Footer from "@/components/footer";
+import { Link } from "wouter";
+
 
 export default function Home() {
   useEffect(() => {
@@ -44,15 +46,7 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
-  const handleContactUs = () => {
-    // In a real application, this would open a contact form or navigate to a contact page
-    console.log('Contact us clicked');
-  };
 
-  const handleScheduleConsultation = () => {
-    // In a real application, this would open a scheduling interface
-    console.log('Schedule consultation clicked');
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -198,31 +192,33 @@ export default function Home() {
               
               {/* Enhanced CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button 
-                  className="group px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-[#dfeef1]/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 min-w-[200px]" 
-                  onClick={handleContactUs}
-                  data-testid="button-contact-us"
-                >
-                  <span className="flex items-center justify-center">
-                    Start Your Journey
-                    <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </button>
+                <Link href="/contact">
+                  <button 
+                    className="group px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-[#dfeef1]/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 min-w-[200px]" 
+                    data-testid="button-contact-us"
+                  >
+                    <span className="flex items-center justify-center">
+                      Start Your Journey
+                      <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                  </button>
+                </Link>
                 
-                <button 
-                  className="group px-8 py-4 border-2 border-[#dfeef1]/30 text-[#dfeef1] rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-[#dfeef1]/10 hover:border-[#dfeef1]/50 transition-all duration-300 hover:scale-105 min-w-[200px]"
-                  onClick={handleScheduleConsultation}
-                  data-testid="button-schedule-consultation"
-                >
-                  <span className="flex items-center justify-center">
-                    Schedule Consultation
-                    <svg className="ml-2 w-5 h-5 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </span>
-                </button>
+                <Link href="/contact">
+                  <button 
+                    className="group px-8 py-4 border-2 border-[#dfeef1]/30 text-[#dfeef1] rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-[#dfeef1]/10 hover:border-[#dfeef1]/50 transition-all duration-300 hover:scale-105 min-w-[200px]"
+                    data-testid="button-schedule-consultation"
+                  >
+                    <span className="flex items-center justify-center">
+                      Schedule Consultation
+                      <svg className="ml-2 w-5 h-5 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </span>
+                  </button>
+                </Link>
               </div>
               
               {/* Trust Indicators */}

@@ -24,6 +24,8 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { Link } from "wouter";
+
 
 const services = [
   {
@@ -400,9 +402,11 @@ export default function Services() {
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
               Let's discuss how our enterprise solutions can accelerate your digital transformation journey.
             </p>
-            <button className="px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              Schedule a Consultation
-            </button>
+            <Link href="/contact">
+              <button className="px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                Schedule a Consultation
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -483,12 +487,12 @@ export default function Services() {
                   >
                     View Full Details
                   </a>
-                  <a 
-                    href="/#contact"
+                  <Link 
+                    href="/contact"
                     className="flex-1 px-6 py-3 border-2 border-[#122458] text-[#122458] rounded-xl font-semibold text-center hover:bg-[#122458] hover:text-white transition-all duration-300"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </>

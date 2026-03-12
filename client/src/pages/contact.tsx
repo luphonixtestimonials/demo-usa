@@ -150,7 +150,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-bold text-[hsl(220,91%,15%)] mb-1">Call Us</h3>
                     <a href="tel:+1-888-6VC-TECH" className="text-blue-600 hover:text-blue-700 transition-colors">
-                      +1 (888) 6VC-TECH
+                      +13072940555
                     </a>
                     <p className="text-sm text-slate-600 mt-1">Monday - Friday, 9AM - 6PM EST</p>
                   </div>

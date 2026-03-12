@@ -7,16 +7,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/contact", async (req, res) => {
     try {
       const data = req.body;
+      console.log("Contact form submission attempt:", data.email);
       
       // Basic validation
       if (!data.email || !data.firstName || !data.message) {
+        console.warn("Validation failed for contact form:", data);
         return res.status(400).json({ message: "Missing required fields" });
       }
 
-      await sendContactEmails(data);
+      const result = await sendContactEmails(data);
+      console.log("Email sending result:", result);
       res.status(200).json({ message: "Message sent successfully" });
     } catch (error: any) {
-      console.error("Route error:", error);
+      console.error("FATAL: Route error in /api/contact:", error);
       res.status(500).json({ message: error.message || "Failed to send message" });
     }
   });

@@ -338,54 +338,9 @@ export default function Contact() {
 
       {/* Map Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold font-poppins text-[hsl(220,91%,15%)] mb-4" data-testid="offices-title">
-              Our Global Presence
-            </h2>
-            <p className="text-xl text-slate-700">
-              With offices and teams across the globe, we're always close to our clients
-            </p>
-          </div>
+        
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-[#dfeef1] rounded-2xl border border-slate-200" data-testid="office-us">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[hsl(220,91%,15%)] mb-2">North America</h3>
-              <p className="text-slate-700">
-                San Francisco, CA<br />
-                Virginia<br />
-                Toronto, Canada
-              </p>
-            </div>
-
-            <div className="text-center p-8 bg-[#dfeef1] rounded-2xl border border-slate-200" data-testid="office-eu">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[hsl(220,91%,15%)] mb-2">Europe</h3>
-              <p className="text-slate-700">
-                London, UK<br />
-                Berlin, Germany<br />
-                Dublin, Ireland
-              </p>
-            </div>
-
-            <div className="text-center p-8 bg-[#dfeef1] rounded-2xl border border-slate-200" data-testid="office-apac">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[hsl(220,91%,15%)] mb-2">Asia Pacific</h3>
-              <p className="text-slate-700">
-                Singapore<br />
-                Sydney, Australia<br />
-                Tokyo, Japan
-              </p>
-            </div>
-          </div>
-        </div>
+            
       </section>
 
       <Footer />

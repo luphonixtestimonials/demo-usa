@@ -6,23 +6,23 @@ export default function About() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-[hsl(220,91%,15%)] to-[hsl(220,91%,20%)] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.2)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.2)_0%,transparent_50%)]"></div>
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-[#dfeef1]/10 backdrop-blur-md rounded-full border border-[#dfeef1]/20 text-[#dfeef1]/90 text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
               About 6VC Consulting
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-[#dfeef1] mb-6 leading-tight" data-testid="about-hero-title">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-[#dfeef1] mb-6 leading-normal" data-testid="about-hero-title">
               Empowering Businesses Through
-              <span className="block bg-gradient-to-r from-blue-400 via-teal-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-400 via-teal-400 to-blue-400 bg-clip-text text-transparent pb-2">
                 Technology Excellence
               </span>
             </h1>
@@ -43,7 +43,7 @@ export default function About() {
               </h2>
               <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                 <p data-testid="story-paragraph-1">
-                  Founded in 2010, 6VC Consulting emerged from a simple yet powerful vision: to bridge the gap between cutting-edge technology and business transformation. What started as a small team of passionate technologists has grown into a trusted partner for enterprises worldwide.
+                  Founded in 2025, 6VC Consulting emerged from a simple yet powerful vision: to bridge the gap between cutting-edge technology and business transformation. What started as a small team of passionate technologists has grown into a trusted partner for enterprises worldwide.
                 </p>
                 <p data-testid="story-paragraph-2">
                   Our journey has been defined by our unwavering commitment to excellence, innovation, and client success. From early cloud migration projects to today's AI-powered solutions, we've consistently stayed ahead of the technology curve, ensuring our clients gain a competitive advantage in their industries.
@@ -55,7 +55,7 @@ export default function About() {
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-founded">
-                <div className="text-4xl font-bold text-blue-600 mb-2">2010</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">2025</div>
                 <p className="text-slate-600 font-medium">Company Founded</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300" data-testid="milestone-projects">
@@ -174,7 +174,7 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-[hsl(220,91%,15%)] to-[hsl(220,91%,20%)] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.2)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.2)_0%,transparent_50%)]"></div>
-        
+
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold font-poppins text-[#dfeef1] mb-6" data-testid="cta-title">
             Ready to Transform Your Business?

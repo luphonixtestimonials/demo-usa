@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport({
   port: parseInt(process.env.SMTP_PORT || "587"),
   secure: process.env.SMTP_PORT === "465", // true for 465, false for other ports
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
+    user: process.env.SMTP_USER|| "info@6vcconsulting.com",
+    pass: process.env.SMTP_PASS|| "Chir@g2026#",
   },
 });
 
@@ -26,8 +26,8 @@ export async function sendContactEmails(data: EmailData) {
 
   // Email to the owner
   const adminMailOptions = {
-    from: `"Contact Form" <${process.env.SMTP_USER || "Info@6VCconsulting.com"}>`,
-    to: "Info@6VCconsulting.com",
+    from: `"Contact Form" <${process.env.SMTP_USER || "info@6vcconsulting.com"}>`,
+    to: "info@6vcconsulting.com",
     subject: `New Contact Form Submission from ${fullName}`,
     html: `
       <h2>New Contact Form Submission</h2>
@@ -43,7 +43,7 @@ export async function sendContactEmails(data: EmailData) {
 
   // Confirmation email to the user
   const userMailOptions = {
-    from: `"6VC Consulting" <${process.env.SMTP_USER || "Info@6VCconsulting.com"}>`,
+    from: `"6VC Consulting" <${process.env.SMTP_USER || "info@6vcconsulting.com"}>`,
     to: email,
     subject: "Thank You for Contacting 6VC Consulting",
     html: `
